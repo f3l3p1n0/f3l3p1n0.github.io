@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <title>Blog - f3l3p1n0</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link  rel="icon" href="favicon.PNG" type="image/png">
+      <link rel="stylesheet" href="css/estilos_portada.css">
+      <!--<link rel="stylesheet" href="css/off.css">-->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="padre">
+        <canvas id="canvas" style="width: 100%; height: 100%; padding: 0; margin: 0;"></canvas>
+        <script src="js/portada_fondo.js"></script>
+      </div>
+      <div class="contenedor">
+        <!--<div class="container">
+          <div class="sign">
+              <div class="neon-blue" id="title">F<span id="fade">uera</span> de línea</div>
+              <div class="neon-blue"> Volveremos <span class="neon-purple" id="trav">pronto</span> ... </div>
+           </div>
+        </div>-->
+        <div class="titulo">
+          <h1>Blog by <span class="f3l3p1n0">f3l3p1n0</span><br>
+          <span class="auto-type"></span></h1>
+          <script>
+            var typed = new Typed(".auto-type", {
+              strings: ["Ciberseguridad", "HTB", "Redes..."],
+              typeSpeed: 40,
+              backSpeed: 100,
+              loop: true
+            })
+          </script>
+        </div>
+        <div class="wrapper">
+          <i class="fa fa-5x fa-facebook-square"></i>
+          <i class="fa fa-5x fa-twitter-square"></i>
+          <a href="https://github.com/f3l3p1n0"><i class="fa fa-5x fa-github-square"></i></a>
+          <i class="fa fa-5x fa-snapchat-square"></i>
+        </div>
+        <a href="main/main.html" class="bn5">Entrar</a>
+      </div>
+    </body>
+</html>
