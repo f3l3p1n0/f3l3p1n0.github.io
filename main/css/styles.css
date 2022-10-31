@@ -1,0 +1,315 @@
+/* PARA CONFIGURAR LOS ESTILOS DEL SCROLL */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #404040;
+  border-radius: 5px;  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #95dce0;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d1fafd; 
+}
+
+/* ######################################### */
+
+.hamburger {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*border-radius: 20px;
+  /*background: #f953c6; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #da2287, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*transform: rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);*/
+}
+.hamburger .hamburger-input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.hamburger .hamburger-line {
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  position: relative;
+}
+
+.hamburger .hamburger-line.first, .hamburger .hamburger-line.third {
+  width: 50%;
+}
+.hamburger .hamburger-line.third {
+  margin-left: 50%;
+  transform-origin: left;
+}
+
+.menu-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.menu-button-wrapper .item-list {
+  position: absolute;
+  top: 83px;
+  transform: translateX(-50%) scale(0);
+  transform-origin: center;
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);
+  background-color: #242424;
+  color: #fff;
+  width: 200px;
+  left: -2rem;
+  padding: 15px 0;
+  z-index: 1;
+  text-align: left;
+  border-radius: 100px;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.menu-button-wrapper .item-list div {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.menu-button-wrapper .menu-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-button:checked ~ .item-list {
+  transform: translateX(-50%) scale(1);
+  border-radius: 20px;
+  opacity: 1;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.second {
+  transform: rotate(-45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.first {
+  transform: translate(2px, 8px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.third {
+  transform: translate(11px, -3px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger:before {
+  transform: rotate(45deg);
+}
+
+
+/* ESTILOS PARA EL SOCIAL MEDIA MENU */
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.socialbtns a, .socialbtns a:hover {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.socialbtns, .socialbtns ul, .socialbtnS li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+  color: #FFF;
+  text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -webkit-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -moz-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -o-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+  color: #000;
+  text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -webkit-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -moz-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -o-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  transition: all ease 0.5s;
+  -moz-transition: all ease-in 0.5s;
+  -webkit-transition: all ease-in 0.5s;
+  -o-transition: all ease-in 0.5s;
+}
+
+/* ESTILOS PARA EL DROPDOWN MENU */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+
+.listas .inicio {
+  margin-left: 15px;
+}
+
+.listas a {
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.listas a:before, .listas a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #16c8d1;
+}
+.listas a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+.listas a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s;
+}
+.listas a:hover:before, .listas a:hover:after, .listas a:focus:before, .listas a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.listas a:hover:before, .listas a:focus:before {
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s;
+}
+.listas a:hover:after, .listas a:focus:after {
+  transition: transform 0s 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.5s;
+}/*# sourceMappingURL=styles2.css.map */
+
+/* ESTILOS PARA EL PAGINATION */
+
+.pagination {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 10px;
+}
+.pagination li {
+  display: inline;
+  text-align: center;
+}
+.pagination a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #fff;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  line-height: 1.5;
+}
+.pagination a.active {
+  cursor: default;
+}
+.pagination a:active {
+  outline: none;
+}
+
+.modal-2 li:first-child a {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.modal-2 li:last-child a {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+.modal-2 a {
+  border-color: #ddd;
+  color: #999;
+  background: #404040;
+}
+.modal-2 a:hover {
+  color: #16c8d1;
+  background-color: #eee;
+}
+.modal-2 a.active, .modal-2 a:active {
+  border-color: #16c8d1;
+  background: #16c8d1;
+  color: #fff;
+}
