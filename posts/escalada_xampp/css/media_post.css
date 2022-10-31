@@ -79,6 +79,7 @@
     .row {
         margin-left: 0%;
         flex-direction: row;
+        height: 180rem;
     }
 
     .main {
