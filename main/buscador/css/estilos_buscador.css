@@ -47,7 +47,7 @@ input[type="search"]:focus{
 	display: none;
 	overflow-y: scroll;
 	height: 300px;
-	border-radius: 10px;
+	border-radius: 4px;
 	color: #fff;
 }
 

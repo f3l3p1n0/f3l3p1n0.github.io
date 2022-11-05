@@ -313,3 +313,35 @@
   background: #16c8d1;
   color: #fff;
 }
+
+/* ESTILOS PARA EL BOTON BACK TO TOP */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #95dce0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 25px;
+  transition: transform 250ms;
+  opacity: 0.8;
+  transition: opacity 250ms;
+}
+
+#topBtn:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+

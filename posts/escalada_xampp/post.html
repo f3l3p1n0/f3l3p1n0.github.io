@@ -4,14 +4,15 @@
       <meta charset="utf-8">
       <title>Blog - f3l3p1n0</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link  rel="icon" href="/favicon.png" type="image/png">
+      <link  rel="icon" href="/favicon.PNG" type="image/png">
       <link rel="stylesheet" href="/posts/escalada_xampp/css/main_post.css">
       <link rel="stylesheet" href="/main/css/styles.css">
       <link rel="stylesheet" href="/posts/escalada_xampp/css/media_post.css">
       <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
       <style>
         .breadcrumbs {
             font-size: .75em;
@@ -150,19 +151,19 @@
                     <p><img src="/posts/escalada_xampp/images/cap2.png"></p>
                     <p>Seguidamente fui a comprobar sus archivos de configuración y es allí donde encontré la debilidad. Todo se trataba de una mala 
                         configuración en los permisos que estaban implementados en los archivos de configuración de Xampp.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap3.PNG"></p>
+                    <p><img src="/posts/escalada_xampp/images/cap3.png"></p>
                     <p>Concretamente se trataba de el archivo de configuración /opt/lampp/xampp. Este archivo es utilizado para realizar tareas como reiniciar el servidor. 
                         Me preguntaba por qué el archivo tenía esos permisos establecidos, ya que de lo normal cuando instalas Xampp por primera vez este archivo se establece con permisos 755.</p>
                     <p>Por otro lado intenté verificar que permisos sudo tenía el usuario que estaba manejando hasta ahora. Y resulta que podía hacer ciertas acciones como root.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap4.PNG"></p>
+                    <p><img src="/posts/escalada_xampp/images/cap4.png"></p>
                     <p>Llegué a la conclusión de que un administrador los había configurado mal o se había despistado.</p>  
                     <br>
                     <p>Ahora intenté realizar la escalada para ser root. Lo único que hice fue modificar el archivo Xampp de la siguiente manera:</p>
-                    <p><img src="/posts/escalada_xampp/images/cap5.PNG"></p> 
+                    <p><img src="/posts/escalada_xampp/images/cap5.png"></p> 
                     <p>Guardé el archivo, y como tenía permisos de escritura se realizaron los cambios. Seguidamente ejecuté el servicio Xampp y se pudo
                         realizar con éxito la escalada de privilegios.
                     </p>
-                    <p><img src="/posts/escalada_xampp/images/cap6.PNG"></p> 
+                    <p><img src="/posts/escalada_xampp/images/cap6.png"></p> 
                     <p>Esto nos hace llegar a la conclusión de que hay que tener muy en cuenta qué estás configurando en cada sitio, directorio, programa, archivo, 
                         en el sistema. Debemos pensar previamente qué consecuencia se va a desatar si realizas dicha acción y una vez realizada controlar y repasar qué se ha configurado. 
                     </p>
@@ -171,6 +172,8 @@
                     <br>
                     <br>
                     <p>By f3l3p1n0</p>
+                    <br>
+                    <br>
                 </div>
             </section>
         </div>
@@ -178,5 +181,8 @@
         <!-- PIE -->
 
         <footer><h2>© 2022 f3l3p1n0</h2></footer>
+
+        <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
+        <script type="text/javascript" src="/js/script.js"></script>
     </body>
 </html>

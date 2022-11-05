@@ -5,7 +5,14 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -45,11 +52,11 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-left: 17%;
-    height: 55rem;
 }
 
 footer {
     padding: 30px;
+    margin-top: auto;
     background-color: #252525;
 }
 

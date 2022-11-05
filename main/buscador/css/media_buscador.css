@@ -1,6 +1,3 @@
-/* SECCIÓN PARA CONFIGURAR RESPONSIVE DESIGN (SCREENS) */
-/* EMPIEZA LA CONFIGURACIÓN DE PANTALLA PARA MOVILES, EN ESTE CASO SE COPIAN VARIAS VECES DEBIDO A LOS CAMBIOS EN EL MENU DROPDOWN */
-
 
 @media screen and (min-width: 980px){ /* Laptop */
     .main {
@@ -13,15 +10,10 @@
     }
 }
 
-/* MEDIAS PERSONALIZADOS PARA PANTALLAS ESPECIALES DE DISPOSITIVOS  */
-
-/* IPAD PRO */
-
 @media only screen and (min-width: 1024px) and (max-width: 1366px){ /* Laptop */
     .row {
         margin-left: 0%;
         flex-direction: row;
-        height: 75rem;
     }
 
     .main {
@@ -53,44 +45,7 @@
     }
 }
 
-
-/* RESOLUCIONES ADAPTADAS PARA PANTALLAS GRANDES, ENFOCADO AL FOOTER */
-
-@media only screen and (min-width: 7000px) and (max-width: 8000px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 235rem;
-    }
-}
-
-@media only screen and (min-width: 4501px) and (max-width: 6000px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 180rem;
-    }
-}
-
-@media only screen and (min-width: 3001px) and (max-width: 4500px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 120rem;
-    }
-}
-
-@media only screen and (min-width: 2801px) and (max-width: 3000px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 110rem;
-    }
-}
-
-@media only screen and (min-width: 2000px) and (max-width: 2800px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 100rem;
-    }
-}
-
 @media only screen and (min-width: 1605px) and (max-width: 1800px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 55rem;
-    }
-
     .list__item {
         width: 70%;
         margin-bottom: 10%;
@@ -98,24 +53,16 @@
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 1604px) and (orientation: landscape) { /* Laptop */
-    .row {
-        height: 55rem;
-    }
-
     .list__item {
         width: 70%;
         margin-bottom: 10%;
     }
 }
 
-/* ################################################################################# */
-
-
 @media only screen and (min-width: 1112px) and (max-width: 1400px) and (orientation: landscape) { /* Laptop */ /* AZUL */
     .row {
         margin-left: 0%;
         flex-direction: row;
-        height: 55rem;
     }
 
     .main {
@@ -181,12 +128,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact {
@@ -256,12 +202,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find {
@@ -331,12 +276,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas {
@@ -406,12 +350,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas, .articulos {
@@ -480,12 +423,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas, .articulos {
@@ -562,12 +504,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas, .articulos {
@@ -660,12 +601,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 14%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas, .articulos {
@@ -758,12 +698,11 @@
     .row {
         flex-direction: column;
         margin-left: 0%;
-        height: 55rem;
     }
 
     aside {
-        flex: 0;
-        height: 21%;
+        flex: 0%;
+        margin-bottom: -75px;
     }
 
     .contact, .find, .etiquetas, .articulos {
