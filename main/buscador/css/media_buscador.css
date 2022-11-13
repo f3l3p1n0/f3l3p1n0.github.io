@@ -116,6 +116,14 @@
     .archive__subtitle {
         width: 80%;
     }
+
+    header #input-search {
+        width: 70%;
+    }
+    
+    header .content-search {
+        width: 70%;
+    }
 }
 
 
@@ -192,6 +200,14 @@
         width: 100%;
     }
 
+    header #input-search {
+        width: 70%;
+    }
+    
+    header .content-search {
+        width: 70%;
+    }
+
 }
 
 @media only screen and (min-width: 780px) and (max-width: 879px){ /* Moviles */
@@ -266,6 +282,14 @@
         width: 100%;
     }
 
+    header #input-search {
+        width: 70%;
+    }
+    
+    header .content-search {
+        width: 70%;
+        height: 40vw;
+    }
 }
 
 @media only screen and (min-width: 680px) and (max-width: 779px){ /* Moviles */
@@ -338,6 +362,15 @@
 
     .archive__subtitle {
         width: 100%;
+    }
+
+    header #input-search {
+        width: 70%;
+    }
+    
+    header .content-search {
+        width: 70%;
+        height: 40vw;
     }
 
 }
@@ -413,6 +446,15 @@
     .archive__subtitle {
         width: 100%;
     }
+
+    header #input-search {
+        width: 70%;
+    }
+    
+    header .content-search {
+        width: 70%;
+        height: 40vw;
+    }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 593px){ /* Moviles */
@@ -487,12 +529,13 @@
         width: 100%;
     }
 
-    section .navegacion input {
+    header #input-search {
         width: 70%;
     }
     
-    section .search {
+    header .content-search {
         width: 70%;
+        height: 50vw;
     }
 }
 
@@ -579,15 +622,16 @@
         font-size: .60em;
     }
 
-    section .navegacion input {
+    header #input-search {
         width: 70%;
     }
-
-    section .search {
+    
+    header .content-search {
         width: 70%;
+        height: 60vw;
     }
 
-    section tbody tr td a{ 
+    header tbody tr td a{ 
         font-size: 13px;
     }
 }
@@ -676,15 +720,16 @@
         font-size: .60em;
     }
 
-    section .navegacion input {
+    header #input-search {
         width: 70%;
     }
-
-    section .search {
+    
+    header .content-search {
         width: 70%;
+        height: 60vw;
     }
 
-    section tbody tr td a{ 
+    header tbody tr td a{ 
         font-size: 10px;
     }
     
@@ -773,19 +818,17 @@
         font-size: .60em;
     }
 
-    section .navegacion input {
+    header #input-search {
         width: 70%;
     }
-
-    section .search {
+    
+    header .content-search {
         width: 70%;
+        height: 70vw;
     }
 
-        section tbody tr td a{ 
+    header tbody tr td a{ 
         font-size: 10px;
     }
     
-    section tbody tr td a{ 
-        font-size: 10px;
-    }
 }
