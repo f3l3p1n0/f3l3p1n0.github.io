@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+/* ESTILO GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 42, 54);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    position: relative;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+nav a {
+    color: #fff;
+    /*padding: 10px 3px;*/
+    text-decoration: none;
+    /*position: relative;*/
+    font-weight: 550;
+    /*margin-right: 20px;*/
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 17%;
+}
+
+footer {
+    padding: 30px;
+    margin-top: auto;
+    background-color: #44475a;
+}
+
+footer h2 {
+    margin-left: 17%;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.items {
+    opacity: .8;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+.items:hover {
+    opacity: 1;
+}
+
+aside {
+    flex: 10%;
+    padding: 20px;
+}
+
+.autor_content h3 {
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Pacifico';
+}
+
+.autor_content p {
+    color: rgb(231, 231, 231);
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+}
+
+.autor img {
+    padding: 5px;
+    border: 1px solid #fff;
+    max-width: 115px;
+    border-radius: 50%;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+.page__title {
+    margin-top: 0;
+    line-height: 1;
+}
+
+.archive__subtitle {
+    margin: 1em 0 1em;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Dancing Script';
+    color: #ff79c6;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    width: 55%;
+}
+
+section h3 {
+    font-size: 1em;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+    margin: 2em 0 0.5em;
+    line-height: 1.2;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    font-weight: bold;
+}
+
+.list__item {
+    width: 55%;
+    margin-bottom: 2.5%;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 2%;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+
+.list__item:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+    transform: translateY(-5px) !important;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.list__item h2 {
+    margin-top: 0%;
+    color: rgb(189, 147, 249);
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1.25em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.page__meta {
+    margin: 0 0 9px;
+    color: #f1f1f1;
+}
+
+.page__meta time {
+    font-size: 0.9em;
+}
+
+.archive__item-excerpt {
+    font-size: 0.85em;
+    color: #fff;
+}
+
+.archive__item-excerpt2 {
+    font-size: 0.95em;
+    color: #fff;
+}
+
+.svg-inline--fa {
+    color: #fff;
+    margin-right: 0.5%;
+    font-size: 0.7em;
+}
+
+.archive__item .btn {
+    color: rgb(255, 184, 108);
+    font-size: 0.85em;
+}
+
+/* PARA SELECCIONAR CON EL CURSOR */
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog - f3l3p1n0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="icon" href="/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/posts/css/main_post.css">
+        <link rel="stylesheet" href="/main/css/styles.css">
+        <link rel="stylesheet" href="/posts/css/media_post.css">
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            if (window.matchMedia("(min-width: 980px)").matches) {
+                $(window).scroll(function(){
+                    $(".items").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+                });
+                var totaltext = "";
+                for (var i = 0; i < 100; i++) {
+                    totaltext += "scroll!<br />";
+                }
+            }
+        </script> 
+        <style>
+            .breadcrumbs {
+                font-size: .75em;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .breadcrumbs a {
+                text-decoration: none;
+                color: rgb(189, 147, 249);
+                -webkit-transition: all 0.1s ease-in-out;
+                transition: all 0.1s ease-in-out;
+            }
+
+            .breadcrumbs a:hover {
+                color: rgb(255, 184, 108);
+            }
+
+            .titulo_articulos h1 {
+                margin: 1em 0 1em;
+                font-size: 1.563em;
+                font-weight: bold;
+                font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+                color: #fff;
+            }
+
+            .taxonomy__index ul {
+                margin: 1.414em 0;
+                padding: 0;
+                font-size: 0.75em;
+                list-style: none;
+                border: 1px solid black;
+                display : flex;
+                flex-direction : row;
+            }
+
+            .taxonomy__index a {
+                text-decoration: none;
+                color: #fff;
+                border-bottom: 1px solid rgb(231, 231, 231);
+                padding: 0 0 2px;
+                margin-right: 1rem;
+                
+            }
+
+            .taxonomy__index li {
+                margin-bottom: 10px;
+            }
+                
+
+            .taxonomy__index #strong1 {
+                margin-right: 5rem;
+            }
+
+            .subtitulo h2 {
+                color: #fff;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- CABECERA -->
+
+        <nav>
+
+            <div class="content">
+                <div class="social">
+                    <ul id="social-list">
+                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
+                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
+                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
+                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botón submenu -->
+            
+            <div class="main">
+                <label class="menu-button-wrapper" for="">
+                    <input type="checkbox" class="menu-button">
+                    <div class="icon-wrapper">
+                        <label class="hamburger">
+                        <input class="hamburger-input" type="checkbox">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                        </label>
+                    </div>
+                    <div class="item-list">
+                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                    </div>
+                </label>
+            </div>            
+        </nav>
+
+        <!-- CUERPO -->
+        
+        <div class="row">
+            <aside>
+                <div class="items">
+                    <div class="autor">
+                        <img src="images/avatar.jpeg" alt="f3l3p1n0" itemprop="image">
+                    </div>
+                    <div class="autor_content">
+                        <h3 class="autor_name" itemprop="name">f3l3p1n0</h3>
+                        <p class="autor_bio" itemprop="description">CyberSecurity Student &#129299</p>                   
+                        <div class="autor_urls">
+                            <div align="center" class="socialbtns">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/f3l3p1n0/?igshid=Mzc1MmZhNjY%3D" class="fa fa-lg fa-instagram"></a></li>
+                                    <li><a href="https://github.com/f3l3p1n0" class="fa fa-lg fa-github"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/marc-mañé-lobato/" class="fa fa-lg fa-linkedin"></a></li>
+                                    <li><a href="https://www.youtube.com/@f3l3p1n0" class="fa fa-lg fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Keylogger para Ubuntu</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Keylogger para Ubuntu (versión 20 o superior)</h1></div>
+                <p class="page__meta">
+                    <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                    <time datetime="2020-11-29T00:00:00+00:00">Abril 04, 2023</time>
+                </p>
+                <div class="seccion">
+                    <p>En este artículo te mostraré cómo descargar un KEYLOGGER y cómo ponerlo en funcionamiento. Con este podrás generar un archivo con todas las pulsaciones del teclado y enviarlo por correo electrónico.</p>
+                        
+                    <p>Un keylogger es un tipo de software malicioso que se instala en un ordenador 
+                        sin el conocimiento del usuario y registra todas las pulsaciones de teclas realizadas en el teclado, incluyendo contraseñas, nombres de usuario y otra información personal.</p>
+                    <p><img src="/posts/f3l3key/images/cap1.PNG"></p>
+                    <br>
+                    <p><u>Requisitos para el keylogger</u></p>
+                    <p>
+                        - De momento solo se ha probado para Ubuntu y con versión 20 o superior.<br><br>
+                        - Se necesita dos cuentas de correo electrónico. La primera es obligatorio que sea de Gmail.<br><br>
+                        - Se necesitará una contraseña para aplicaciones (Más adelante lo explico).<br><br>
+                        - Muy importante haber realizado la escalada de privilegios exitosamente (Necesitaremos privilegios root).
+                    </p>
+                    <br>
+                    <p><u>Explicación del proceso</u></p>
+                    <p>Lo primero que vamos a hacer es situarnos. Disponemos de la siguiente máquina (Víctima) basada en Ubuntu con la versión 20.04</p>
+                    <p><img src="/posts/f3l3key/images/cap2.png"></p>
+                    <p>Ahora lo que haremos es descargar el keylogger con sus archivos necesarios. Es necesario que tengas en cuenta la decisión de dónde alojarás el keylogger.
+                        Recomiendo que sea en un lugar donde la víctima no lo vaya a encontrar (Más adelante subiré un artículo para aprender como ofuscar o encriptar el código).
+                    </p>
+                    <p>Para descargar el keylogger podemos ir al siguiente enlace: <a style="color:aqua; text-decoration: none;" href="https://github.com/f3l3p1n0/f3l3key">Descargar aquí</a></p>
+                    <p>O también podemos emplear la siguiente comanda:</p>
+                    <p><img src="/posts/f3l3key/images/cap3.png"></p>
+                    <p>Una vez que lo hayamos descargado, iremos al código del archivo 'tester.sh' y nos situaremos en la siguiente línea:</p>
+                    <p><img src="/posts/f3l3key/images/cap4.png"></p>
+                    <p>En este archivo será el único que tendrás que realizar varios cambios. Muy importante que por cada cambio que realices, respetes la estructura tal y como la estás viendo.</p>
+                    <p>Primeramente, debes agregar la ruta donde se encuentra actualmente el keylogger. En mi caso se encuentra en Descargas.</p>
+                    <p><img src="/posts/f3l3key/images/cap5.png"></p>
+                    <p>Una vez especificada la ruta, tendrás que escribir el correo de la cuenta que va a emitir los mensajes. En este caso es obligatorio que
+                        sea una cuenta basada en Gmail ya que el keylogger utiliza los servicios de Gmail para el envio del archivo con las pulsaciones.
+                    </p>
+                    <p><img src="/posts/f3l3key/images/cap6.png"></p>
+                    <p>El siguiente paso sería generar una contraseña. Esta contraseña debes generarla con la cuenta de Gmail que has creado para enviar los correos. 
+                        Para ello nos dirijiremos al siguiente apartado:</p>
+                    <p><img src="/posts/f3l3key/images/cap7.png"></p>
+                    <p>Después en el buscador escribirás lo siguiente:</p>
+                    <p><img src="/posts/f3l3key/images/cap8.png"></p>
+                    <p>Finalmente en este apartado podrás generar la clave para aplicaciones:</p>
+                    <p><img src="/posts/f3l3key/images/cap9.png"></p>
+                    <p>Esta contraseña tendrás que copiarla y pegarla en el siguiente apartado del archivo 'tester.sh'</p>
+                    <p><img src="/posts/f3l3key/images/cap10.png"></p>
+                    <p>Por último solo te queda especificar la cuenta de correo que se encargará de recibir los mensajes. Esta cuenta de correo puede ser de Gmail, Hotmail o lo que prefieras:</p>
+                    <p><img src="/posts/f3l3key/images/cap11.png"></p>
+                    <p>Una vez preparado el archivo, lo guardaremos y pasaremos a aplicar permisos de ejecución a los 3 archivos:</p>
+                    <p><img src="/posts/f3l3key/images/cap12.png"></p>
+                    <p>Posteriormente, ejecutaremos el archivo 'installer.sh'. Debes ser usuario root:</p>
+                    <p><img src="/posts/f3l3key/images/cap13.png"></p>
+                    <p>Habrá un momento en el que el programa se detendrá en la siguiente sección:</p>
+                    <p><img src="/posts/f3l3key/images/cap14.png"></p>
+                    <p>En este caso debemos de escribir el numero 1</p>
+                    <p><img src="/posts/f3l3key/images/cap15.png"></p>
+                    <p>Este archivo que se nos habrá abierto, tendremos que guardarlo presionando la tecla ctrl + o y luego enter</p>
+                    <p><img src="/posts/f3l3key/images/cap16.png"></p>
+                    <p>Posteriormente se nos habrá creado una nueva tarea Cron. Este va a permitir que el keylogger pueda estar funcionando constantemente e incluso si la máquina se reinicia:</p>
+                    <p><img src="/posts/f3l3key/images/cap17.png"></p>
+                    <p>Ahora si realizamos una prueba, por ejemplo en un login cualquiera:</p>
+                    <p><img src="/posts/f3l3key/images/cap18.png"></p>
+                    <p>Veremos como en el correo receptor, recibiremos un correo con un archivo:</p>
+                    <p><img src="/posts/f3l3key/images/cap19.png"></p>
+                    <p>Y si lo abrimos podremos visualizar la pulsaciones de las teclas que ha realizado la víctima:</p>
+                    <p><img src="/posts/f3l3key/images/cap20.png"></p>
+                    <br>
+                    <p>Algo que hay que tener en cuenta es que este keylogger está programado de tal manera que te enviará un correo cada 10 minutos. En este artículo
+                        he disminuido el tiempo para enseñarte el ejemplo y así no tuviera que esperar tanto tiempo.
+                    </p>
+                    <p>También decir que esto en una versión beta, por tanto continua en constante mejora.</p>
+                    <p>En otro artículo comentaré el código del keylogger y así podrás saber cómo modificar varios parámetros y entre otros conceptos que quedan por explicar.</p>
+                    <br>
+                    <p>Muchas gracias por leerme, cualquier duda comentame por mis redes sociales. Hasta otra! :D</p>
+                    <br>
+                    <p>By f3l3p1n0</p>
+                    <br>
+                    <br>
+                </div>
+            </section>
+        </div>
+
+        <!-- PIE -->
+
+        <footer><h2>© 2023 f3l3p1n0</h2></footer>
+
+        <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script async="async" src="/js/animacion_menu.js"></script> 
+    </body>
+</html>

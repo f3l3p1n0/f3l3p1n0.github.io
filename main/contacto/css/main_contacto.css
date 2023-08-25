@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* SECCIÓN GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 42, 54);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    position: relative;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+nav a {
+    color: #fff;
+    /*padding: 10px 3px;*/
+    text-decoration: none;
+    /*position: relative;*/
+    font-weight: 550;
+    /*margin-right: 20px;*/
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 23.5%;
+    margin-top: 3%;
+    /*border: 1px solid yellow;*/
+    width: 54%;
+}
+
+footer {
+    padding: 30px;
+    margin-top: auto;
+    background-color: #44475a;
+}
+
+footer h2 {
+    margin-left: 17%;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* ESTILOS PARA SECTION */
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+/* ESTILOS PARA FOTO Y DESCRIPCION */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: var(--second-bg-color);
+  color: #f8f8f2;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.heading span {
+  color: #50fa7b;
+}
+
+.about-content {
+  /*border: 1px solid black;*/
+  padding: 3%;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+  font-family: 'Dancing Script';
+  font-size: 1.8em;
+}
+
+.about-content p {
+  font-size: 1rem;
+  margin: 1rem 0 1rem;
+  text-align: justify;
+  color: #f8f8f2;
+  font-family: 'Roboto';
+  /*border: 1px solid green;*/
+}
+
+/*.about-img img { PARA MODIFICAR EL TAMAÑO CUADRICULAR DE LA IMAGEN
+  width: 10vw;
+}*/
+
+/* ANIMACION DE LA IMAGEN Y ESTILO */
+
+/*.container {}*/
+.tilt-box-wrap {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transition: all 0.6s ease-out;
+  perspective: 1000px;
+}
+.tilt-box-wrap:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+
+
+.tilt-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  transition: all 0.6s ease-out;
+  transform: rotateY(20deg) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.tilt-box img {
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+  border-radius: 5%;
+}
+
+.t_over {
+  width: 33.333%;
+  height: 33.333%;
+  position: absolute;
+  z-index: 1;
+}
+
+.t_over:nth-child(1){ left: 0; top: 0; }
+.t_over:nth-child(2){ left: 33.333%; top: 0; }
+.t_over:nth-child(3){ left: 66.666%; top: 0; }
+.t_over:nth-child(4){ left: 0; top: 33.333%; }
+.t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
+.t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
+.t_over:nth-child(7){ left: 0; top: 66.666%; }
+.t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
+.t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+
+.t_over:nth-child(1):hover ~ .tilt-box{ 
+  transform: rotateX(-20deg) rotateY(20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+.t_over:nth-child(2):hover ~ .tilt-box{ 
+  transform: rotateX(-20deg) rotateY(0deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0);
+}
+.t_over:nth-child(3):hover ~ .tilt-box{ 
+  transform: rotateX(-20deg) rotateY(-20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+.t_over:nth-child(4):hover ~ .tilt-box{ 
+  transform: rotateX(0deg) rotateY(20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+.t_over:nth-child(5):hover ~ .tilt-box{ 
+  transform: rotateX(0deg) rotateY(0deg);
+}
+.t_over:nth-child(6):hover ~ .tilt-box{ 
+  transform: rotateX(0deg) rotateY(-20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+.t_over:nth-child(7):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+
+.t_over:nth-child(8):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(0deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0);
+}
+
+.t_over:nth-child(9):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(-20deg);
+  box-shadow: 0 19px 38px rgba(80, 250, 123,0.30), 0 15px 12px rgba(80, 250, 123,0.22);
+}
+
+/* SOCIAL MEDIA BODY */
+
+.socialmedia {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav-link-text {
+  font-size: 0.675rem;
+  line-height: 1.25rem;
+  font-weight: 550;
+  text-align: center;
+  font-family: inherit;
+  color: #eee !important;
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.nav-links {
+  color: #fff;
+  border: 3px solid #50fa7b;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+.nav-links:hover {
+  background-color: #50fa7b;
+  color: #000 !important;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+.credits {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.credits a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #818181;
+  font-family: Degular, sans-serif;
+  text-decoration: none;
+}
+
+/* PARA SELECCIONAR CON EL CURSOR */
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+
+

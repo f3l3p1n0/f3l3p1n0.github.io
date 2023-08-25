@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog - f3l3p1n0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="icon" href="/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/posts/css/main_post.css">
+        <link rel="stylesheet" href="/main/css/styles.css">
+        <link rel="stylesheet" href="/posts/css/media_post.css">
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            if (window.matchMedia("(min-width: 980px)").matches) {
+                $(window).scroll(function(){
+                    $(".items").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+                });
+                var totaltext = "";
+                for (var i = 0; i < 100; i++) {
+                    totaltext += "scroll!<br />";
+                }
+            }
+        </script>
+        <style>
+            .breadcrumbs {
+                font-size: .75em;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            .breadcrumbs a {
+                text-decoration: none;
+                color: rgb(189, 147, 249);
+                -webkit-transition: all 0.1s ease-in-out;
+                transition: all 0.1s ease-in-out;
+            }
+
+            .breadcrumbs a:hover {
+                color: rgb(255, 184, 108);
+            }
+
+            .titulo_articulos h1 {
+                margin: 1em 0 1em;
+                font-size: 1.563em;
+                font-weight: bold;
+                font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+                color: #fff;
+            }
+
+            .taxonomy__index ul {
+                margin: 1.414em 0;
+                padding: 0;
+                font-size: 0.75em;
+                list-style: none;
+                border: 1px solid black;
+                display : flex;
+                flex-direction : row;
+            }
+
+            .taxonomy__index a {
+                text-decoration: none;
+                color: #fff;
+                border-bottom: 1px solid rgb(231, 231, 231);
+                padding: 0 0 2px;
+                margin-right: 1rem;
+                
+            }
+
+            .taxonomy__index li {
+                margin-bottom: 10px;
+            }
+                
+
+            .taxonomy__index #strong1 {
+                margin-right: 5rem;
+            }
+
+            .subtitulo h2 {
+                color: #fff;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- CABECERA -->
+
+        <nav>
+
+            <div class="content">
+                <div class="social">
+                    <ul id="social-list">
+                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
+                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
+                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
+                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Botón submenu -->
+            
+            <div class="main">
+                <label class="menu-button-wrapper" for="">
+                    <input type="checkbox" class="menu-button">
+                    <div class="icon-wrapper">
+                        <label class="hamburger">
+                        <input class="hamburger-input" type="checkbox">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                        </label>
+                    </div>
+                    <div class="item-list">
+                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                    </div>
+                </label>
+            </div>            
+        </nav>
+
+        <!-- CUERPO -->
+        
+        <div class="row">
+            <aside>
+                <div class="items">
+                    <div class="autor">
+                        <img src="images/avatar.jpeg" alt="f3l3p1n0" itemprop="image">
+                    </div>
+                    <div class="autor_content">
+                        <h3 class="autor_name" itemprop="name">f3l3p1n0</h3>
+                        <p class="autor_bio" itemprop="description">CyberSecurity Student &#129299</p>                   
+                        <div class="autor_urls">
+                            <div align="center" class="socialbtns">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/f3l3p1n0/?igshid=Mzc1MmZhNjY%3D" class="fa fa-lg fa-instagram"></a></li>
+                                    <li><a href="https://github.com/f3l3p1n0" class="fa fa-lg fa-github"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/marc-mañé-lobato/" class="fa fa-lg fa-linkedin"></a></li>
+                                    <li><a href="https://www.youtube.com/@f3l3p1n0" class="fa fa-lg fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Conexión inversa a través de VPN</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Conexión inversa a través de VPN</h1></div>
+                <p class="page__meta">
+                    <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                    <time datetime="2020-11-29T00:00:00+00:00">November 13, 2022</time>
+                </p>
+                <div class="seccion">
+                    <p>Hoy te voy a enseñar de una forma muy básica y a la vez un poco absurda, cómo saber crear una conexión inversa de forma remota.</p>
+                    <p><img src="/posts/conexion_remota/images/cap1.png"></p>
+                    <p>¿Os acordáis de la escalada de privilegios que conseguí en una máquina del aula del colegio donde voy a estudiar?</p>
+                    <p>Si no lo recordáis os lo pongo por aquí para que le echéis un vistazo, ya que hoy mis explicaciones sobre este nuevo tema son una continuación.</p>
+                    <p><a style="color:#95dce0; text-decoration: none;" href="https://f3l3p1n0.github.io/posts/escalada_xampp/post.html">Escalada de privilegios Xampp</a></p>
+                    <p>Una vez que pudimos conseguir la fase de explotación y post-explotación exitosamente, quisimos ir más allá. Estuve pensando y tuve la idea de querer realizar una conexión con la máquina víctima que estábamos 
+                        manjeando actualmente pero desde cualquier parte del mundo.</p>
+                    <p>Es decir, poder tener los mismos privilegios y el mismo acceso fuera de la red en la que está conectada la máquina víctima. Por lo tanto, podría conectarme al ordenador del aula estando yo en casa.</p>
+                    <p><strong>Debo recalcar que hay mejores maneras de hacerlo y mucho más profesionales. Pero he decidido hacerlo de esta manera ya que quería probar y satisfacer mi curiosidad por aprender ya que en este mundo soy bastante novato 
+                        y estoy en etapa de aprendizaje. No me juzges mejor dame una ayuda si ves que hay algo que puedo mejorar :D</strong></p>
+                    <h3 style="color: #fff;">Requisitos:</h3>
+                    <p>
+                        - Haber hecho elevación de privilegios.<br><br>
+                        - Instalar Hamachi en máquina víctima y atacante.<br><br>
+                        - Tener una cuenta registrada en Hamachi.
+                    </p>
+                    <br>
+                    <p>El punto de partida sería el siguiente, hemos conseguido elevar los privilegios (root):</p>
+                    <p><img src="/posts/conexion_remota/images/cap2.PNG"></p>
+                    <p>Ahora la idea era manejar esta máquina a través de otra que esté conectada en otra red totalmente diferente. Para ello lo haremos empleando VPN y con ello instalaremos Hamachi.</p>
+                    <p><img src="/posts/conexion_remota/images/cap3.PNG"></p>
+                    <p>Para instalarlo emplearemos "dpkg -i paquete.deb"</p>
+                    <p><img src="/posts/conexion_remota/images/cap4.PNG"></p>
+                    <p>Una vez instalado ejecutaremos la comanda siguiente: sudo hamachi</p>
+                    <p><img src="/posts/conexion_remota/images/cap5.PNG"></p>
+                    <p>Con ello podremos observar los diferentes parámetros como el nickname, la cuenta de correo, el estado del login y otros...</p>
+                    <p>En este caso te muestro una captura donde yo ya he realizado una conexion en hamachi.</p>
+                    <p>Pero tu deberás hacer lo siguiente. Primero debes haber creado una cuenta en Hamachi, eso se hace en dos segundos (recomiendo crear una cuenta que luego sepas que vayas a eliminar).</p>
+                    <p><img src="/posts/conexion_remota/images/cap6.PNG"></p>
+                    <p>Ahora debes ir al apartado de Redes y mis redes:</p>
+                    <p><img src="/posts/conexion_remota/images/cap7.PNG"></p>
+                    <p>Necesitarás crear redes, ponerle un nombre y contraseña. Cuando la hayas creado te quedará así:</p>
+                    <p><img src="/posts/conexion_remota/images/cap8.PNG"></p>
+                    <p>De momento no tienes clientes. Pero ahora los vamos a meter en tu nueva red privada virtual creada.</p>
+                    <p>Nos iremos a la máquina víctima y realizaremos la conexión a esta red. Es muy importante que te fijes en la ID de la red que has creado.</p>
+                    <p><img src="/posts/conexion_remota/images/cap9.PNG"></p>
+                    <p>La sintaxis de la comanda sería: sudo hamachi "ID de la red" "contraseña"</p>
+                    <p>Cuando se haya conectado te aparecerá este mensaje:</p>
+                    <p><img src="/posts/conexion_remota/images/cap10.PNG"></p>
+                    <p>Y en el gestor gráfico verás la máquina víctima conectada a la red que has creado.</p>
+                    <p><img src="/posts/conexion_remota/images/cap11.PNG"></p>
+                    <p>Ahora iremos a la máquina atacante y instalaremos Hamachi. Donde tambíen haremos una conexión a nuestra red VPN previamente creada, en modo invitado.</p>
+                    <p><img src="/posts/conexion_remota/images/cap12.png"></p>
+                    <p>En el gestor gráfico de Hamachi podemos observar que ya está conectada la máquina atacante en la red.</p>
+                    <p><img src="/posts/conexion_remota/images/cap13.PNG"></p>
+                    <p>Ahora toca crear el binario malicioso. En mi caso lo crearé dentro de htdocs donde se sitúa Xampp, que es donde obtuve la escalada de privilegios. Debes meterlo en algún lugar que sepas que vayas 
+                        a poder luego compartir por la red.</p>
+                    <p><img src="/posts/conexion_remota/images/cap14.PNG"></p>
+                    <p>Muy importante que la ip sea la del atacante, pero la que proporciona Hamachi. Para saber su ip debes poner en la terminal "sudo hamachi".</p>
+                    <p>Si es posible, dale permisos de ejecución y cambia el propietario a Root:</p>
+                    <p><img src="/posts/conexion_remota/images/cap15.PNG"></p>
+                    <p>Bien! Por lo que es de la máquina víctima ya has acabado. Ahora te toca trabajar en la máquina atacante. Solo debes preparar la máquina en un puerto escuchando:</p>
+                    <p><img src="/posts/conexion_remota/images/cap16.png"></p>
+                    <p>Previamente en la máquina víctima debíamos haber preparado algun tipo de servicio que pueda compartir el binario malicioso y así lo podamos ejecutar para realizar la conexión inversa. Yo lo he hecho a través de Xampp.</p>
+                    <p>Abrimos Firefox escribimos IP de la máquina víctima (Ip de Hamachi)/binario.php y lo ejecutamos.</p>
+                    <p><img src="/posts/conexion_remota/images/cap17.PNG"></p>
+                    <p>Por último se habrá realizado exitosamente una conexión inversa a través de una VPN.</p>
+                    <p><img src="/posts/conexion_remota/images/cap18.png"></p>
+                    <p>Como ves, el hecho de haber podido elevar los privilegios en la máquina víctima nos da una infinidad de cosas por hacer. Como por ejemplo hacer posible la conexión a esta estando en cualquier parte del mundo.</p>
+                    <br>
+                    <br>
+                    <p>Hasta aquí es todo! Nos vemos para el próximo artículo! Un saludo! :D</p>
+                    <br>
+                    <br>
+                    <p>By f3l3p1n0</p>
+                </div>
+                <br>
+                <br>
+                <!--
+                    <ul class="pagination modal-2">
+                        <li><a href="/main/main.html" class="prev">&laquo </a></li>
+                        <li><a href="/posts/comandos_pentesting/post.html" class="active">1</a></li>
+                        <li><a href="#" class="next" style="pointer-events: none; cursor: default;">  &raquo;</a></li>
+                    </ul>
+                -->
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+        </div>
+
+        <!-- PIE -->
+
+        <footer><h2>© 2023 f3l3p1n0</h2></footer>
+
+        <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script async="async" src="/js/animacion_menu.js"></script>
+    </body>
+</html>

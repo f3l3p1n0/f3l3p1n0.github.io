@@ -1,0 +1,370 @@
+
+
+/* ============================================================================================================ */
+/*                                              CONTROL ANCHURA                                                 */
+/* ============================================================================================================ */
+
+
+
+/* ============================================================================================================ */
+
+/* APAGAMOS EL DISPLAY DE CODEXPARTE1 Y 2 EN UN RANGO DE RESOLUCIONES */
+
+@media only screen and (min-width: 1176px) { 
+    #codexparte1, #codexparte2 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 70px;
+    }
+}
+
+/* ============================================================================================================ */
+
+
+
+/* ============================================================================================================ */
+/*                                              RESOLUCIONES GRANDES                                            */
+/* ============================================================================================================ */
+
+@media only screen and (min-width: 1605px) and (max-width: 1800px){
+    .container {
+        margin-top: 15px;
+    }
+    .MatrixTextEffect {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1469px) and (max-width: 1604px){
+    .container {
+        margin-top: 20px;
+    }
+    .MatrixTextEffect {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 1373px) and (max-width: 1468px){ 
+    .container {
+        margin-top: 20px;
+    }
+    .MatrixTextEffect {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1274px) and (max-width: 1372px){ 
+    .container {
+        margin-top: 20px;
+    }
+    .container p {
+        font-size: 3.1rem;
+    }
+    .wrapper {
+        font-size: 0.55rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    .MatrixTextEffect {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 1176px) and (max-width: 1273px){ 
+    .container {
+        margin-top: 20px;
+    }
+    .container p {
+        font-size: 3.1rem;
+    }
+    .wrapper {
+        font-size: 0.55rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    .MatrixTextEffect {
+        font-size: 40px;
+    }
+}
+
+/* ============================================================================================================ */
+/*                                              RESOLUCIONES PEQUEÑAS                                           */
+/* ============================================================================================================ */
+
+@media only screen and (min-width: 1100px) and (max-width: 1175px){ 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 3.1rem;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1099px){ 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 3.1rem;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1049px){ 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 2.8rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 10px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 999px){
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 3rem;
+    }
+    .wrapper {
+        font-size: 0.6rem;
+    }
+    i {
+        padding: 0px 10px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 959px) { 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 3rem;
+    }
+    .wrapper {
+        font-size: 0.6rem;
+    }
+    i {
+        padding: 0px 10px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 840px) and (max-width: 919px){ 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 3rem;
+    }
+    .wrapper {
+        font-size: 0.6rem;
+    }
+    i {
+        padding: 0px 10px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 839px){ /*tamaño boton grande*/
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 2.5rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 710px) and (max-width: 759px){ 
+    .container {
+        margin-top: 30px;
+    }
+    .container p {
+        font-size: 2.5rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 709px){ 
+    .container {
+        margin-top: 25px;
+    }
+    .container p {
+        font-size: 2.2rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 679px){ 
+    .container {
+        margin-top: 25px;
+    }
+    .container p {
+        font-size: 2.2rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 639px){ 
+    .container {
+        margin-top: 25px;
+    }
+    .container p {
+        font-size: 2.2rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 599px){ 
+    .container {
+        margin-top: 25px;
+    }
+    .container p {
+        font-size: 2.2rem;
+        width: 70%;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 589px){ 
+    .container {
+        margin-top: 25px;
+    }
+    .container p {
+        font-size: 1.8rem;
+    }
+    .wrapper {
+        font-size: 0.5rem;
+    }
+    i {
+        padding: 0px 9px;
+    }
+    #codex4 {
+        display: none;
+    }
+    .MatrixTextEffect {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        /*border: 1px solid reD;*/
+        letter-spacing: 0.5rem;
+    }
+    .DivClass {
+        padding: 0% 0% 0% 0%;
+    }
+    .container p span.cursor {
+        width: 10px;
+    }
+}

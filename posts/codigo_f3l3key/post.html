@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <title>Blog - f3l3p1n0</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link  rel="icon" href="/favicon.png" type="image/png">
+      <link rel="stylesheet" href="/posts/css/main_post.css">
+      <link rel="stylesheet" href="/main/css/styles.css">
+      <link rel="stylesheet" href="/posts/css/media_post.css">
+      <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+          if (window.matchMedia("(min-width: 980px)").matches) {
+              $(window).scroll(function(){
+                  $(".items").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+              });
+              var totaltext = "";
+              for (var i = 0; i < 100; i++) {
+                  totaltext += "scroll!<br />";
+              }
+          }
+      </script> 
+      <style>
+        .breadcrumbs {
+            font-size: .75em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: rgb(189, 147, 249);
+            -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .breadcrumbs a:hover {
+            color: rgb(255, 184, 108);
+        }
+
+        .titulo_articulos h1 {
+            margin: 1em 0 1em;
+            font-size: 1.563em;
+            font-weight: bold;
+            font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+            color: #fff;
+        }
+
+        .taxonomy__index ul {
+            margin: 1.414em 0;
+            padding: 0;
+            font-size: 0.75em;
+            list-style: none;
+            border: 1px solid black;
+            display : flex;
+            flex-direction : row;
+        }
+
+        .taxonomy__index a {
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 1px solid rgb(231, 231, 231);
+            padding: 0 0 2px;
+            margin-right: 1rem;
+            
+        }
+
+        .taxonomy__index li {
+            margin-bottom: 10px;
+        }
+            
+
+        .taxonomy__index #strong1 {
+            margin-right: 5rem;
+        }
+
+        .subtitulo h2 {
+            color: #fff;
+        }
+
+        strong {
+            background-color: #95dce07c;
+            color: black;
+        }
+
+      </style>
+    </head>
+    <body>
+        
+        <!-- CABECERA -->
+
+        <nav>
+
+            <div class="content">
+                <div class="social">
+                    <ul id="social-list">
+                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
+                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
+                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
+                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Botón submenu -->
+            
+            <div class="main">
+                <label class="menu-button-wrapper" for="">
+                    <input type="checkbox" class="menu-button">
+                    <div class="icon-wrapper">
+                        <label class="hamburger">
+                        <input class="hamburger-input" type="checkbox">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                        </label>
+                    </div>
+                    <div class="item-list">
+                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                    </div>
+                </label>
+            </div>            
+        </nav>
+
+        <!-- CUERPO -->
+        
+        <div class="row">
+            <aside>
+                <div class="items">
+                    <div class="autor">
+                        <img src="images/avatar.jpeg" alt="f3l3p1n0" itemprop="image">
+                    </div>
+                    <div class="autor_content">
+                        <h3 class="autor_name" itemprop="name">f3l3p1n0</h3>
+                        <p class="autor_bio" itemprop="description">CyberSecurity Student &#129299</p>                   
+                        <div class="autor_urls">
+                            <div align="center" class="socialbtns">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/f3l3p1n0/?igshid=Mzc1MmZhNjY%3D" class="fa fa-lg fa-instagram"></a></li>
+                                    <li><a href="https://github.com/f3l3p1n0" class="fa fa-lg fa-github"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/marc-mañé-lobato/" class="fa fa-lg fa-linkedin"></a></li>
+                                    <li><a href="https://www.youtube.com/@f3l3p1n0" class="fa fa-lg fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Explicando cómo funciona un Keylogger</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Explicando cómo funciona un Keylogger</h1></div>
+                <p class="page__meta">
+                    <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                    <time datetime="2020-11-29T00:00:00+00:00">Abril 06, 2023</time>
+                </p>
+                <div class="seccion">
+                    <p>En este artículo te voy explicar paso a paso el funcionamiento del keylogger (<a style="color: cyan; text-decoration:none;" href="https://github.com/f3l3p1n0/f3l3key">f3l3key</a>). Este código esta basado en Python y tiene como función registrar 
+                        las teclas presionadas por el usuario y enviar un correo electrónico 
+                        con el registro de las teclas cada cierto tiempo o cuando el archivo de registro alcanza cierto tamaño.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap1.png"></p>
+                    <br><br>
+                    <p>En las primeras líneas se cargan los diferentes módulos de Python que el programa utilizará en posteriores líneas:</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap2.png"></p>
+                    <p>Cada módulo realiza lo siguiente:</p>
+                    <p>
+                        - <strong>keyboard:</strong> un módulo que permite detectar las pulsaciones del teclado.<br><br>
+                        - <strong>os:</strong> un módulo que proporciona una forma portátil de utilizar funcionalidades del sistema operativo, como acceder al sistema de archivos o variables de entorno.<br><br>
+                        - <strong>time:</strong> un módulo que proporciona funciones para trabajar con fechas y tiempos.<br><br>
+                        - <strong>datetime:</strong> un módulo que proporciona clases para trabajar con fechas y tiempos.<br><br>
+                        - <strong>sys:</strong> un módulo que proporciona acceso a algunas variables y funciones específicas del sistema.<br><br>
+                        - <strong>smtplib:</strong> un módulo que permite enviar correos electrónicos utilizando el protocolo SMTP.<br><br>
+                        - <strong>ssl:</strong> un módulo que proporciona funciones para trabajar con SSL/TLS.<br><br>
+                        - <strong>re:</strong> un módulo que proporciona operaciones de coincidencia de expresiones regulares.<br><br>
+                        - <strong>EmailMessage:</strong> una clase del módulo email.message que se utiliza para crear y enviar correos electrónicos.<br>
+                    </p>
+                    <br>
+                    <p>La siguiente línea hace referencia a la función imprimir_mensaje. Imprime en la consola el mensaje que recibe como argumento.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap3.png"></p>
+                    <br>
+                    <p>En la primera condición se verifica que el script se esté ejecutando como root o con permisos de administrador. Si no se cumple, se muestra un mensaje y se finaliza el script.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap4.png"></p>
+                    <br>
+                    <p>En la segunda condición se comprueba si se ha pasado el argumento "-h" al script. Si es así, se muestra información de ayuda en la consola y se finaliza el script.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap5.png"></p>
+                    <br>
+                    <p>En las dos últimas condiciones se comprueba que se hayan pasado exactamente 3 argumentos al script: email_sender, email_password y email_receiver. Además, se verifica que las direcciones de correo electrónico sean válidas. 
+                        Si no se cumplen estas condiciones, se muestra un mensaje de error y se finaliza el script.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap6.png"></p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap7.png"></p>
+                    <br>
+                    <p>Posteriormente se asignan los valores de los argumentos a las variables correspondientes.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap8.png"></p>
+                    <br>
+                    <p>Se define el nombre del archivo de registro de teclas.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap9.png"></p>
+                    <br>
+                    <p>Se guarda el tiempo actual en la variable "inicio".</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap10.png"></p>
+                    <br>
+                    <p>La función detalles_envio() se encarga de guardar los detalles necesarios para enviar un correo electrónico.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap11.png"></p>
+                    <br>
+                    <p>
+                        La función, sendMail(), utiliza la función detalles_envio() para obtener los detalles del correo electrónico que se enviará y 
+                        utiliza el método sendmail() de smtplib para enviar el correo electrónico a través del servidor de Gmail. Si la conexión no se establece correctamente, 
+                        la función intenta nuevamente hasta que se pueda enviar el correo electrónico.
+                    </p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap12.png"></p>
+                    <br>
+                    <p>
+                        La función "file_modif_and_time()" calcula el tiempo y verifica si el archivo "file.txt" ha sido modificado desde la última vez que se verificó. 
+                        Si el archivo ha sido modificado y han pasado más de 10 minutos (600 segundos), se llama a la función "sendMail()" para enviar un correo electrónico 
+                        con el contenido del archivo. La variable global "inicio" se actualiza para que la función pueda seguir monitoreando el archivo en el 
+                        futuro.
+                    </p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap13.png"></p>
+                    <br>
+                    <p>
+                        La función size_f() calcula el tamaño del archivo "file.txt" y comprueba si se encuentra entre un rango específico de tamaño en bytes. 
+                        Si el tamaño del archivo está entre 10 MB y 18 MB, entonces se llama a la función "sendMail()" para enviar el correo electrónico con el archivo adjunto. 
+                        Después de enviar el correo electrónico, el archivo "file.txt" se borra y se establece el tiempo de inicio a la hora actual.
+                    </p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap14.png"></p>
+                    <br>
+                    <p>
+                        La función reg_keys() se encarga de capturar las teclas presionadas por el usuario y escribirlas en un archivo de texto. 
+                        Se utiliza un bucle infinito que lee cada evento de teclado generado y si se detecta que una tecla ha sido presionada (event_type == keyboard.KEY_DOWN), 
+                        entonces se abre el archivo "file.txt" en modo de apendizado (modo "a"), se escribe la tecla presionada y se cierra el archivo. 
+                        Luego, se verifica si el tamaño del archivo no excede los 20 MB utilizando la función "size_f()", y si el tiempo transcurrido desde el último envío 
+                        de correo es mayor o igual a 10 minutos utilizando la función "file_modif_and_time()", para enviar un correo electrónico con el contenido del archivo "file.txt".
+                    </p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap15.png"></p>
+                    <br>
+                    <p>La función create_file() comprueba si el archivo llamado file.txt existe en el sistema o no. Si no existe, la función crea el archivo y lo cierra inmediatamente.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap16.png"></p>
+                    <br>
+                    <p>Por último, la función main() es la encargada de iniciar el programa y coordinar el funcionamiento de las otras funciones.</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap17.png"></p>
+                    <br>
+                    <br><br>
+                    <p>Cabe destacar que <strong>se puede realizar el uso independiente del keylogger</strong> sin la necesidad de los demás archivos.</p>
+                    <p>Para ello debes tener en cuenta que el sistema tenga instalado el módulo 'keyboard'. Ya que es utilizado por el keylogger.</p>
+                    <p>Puedes utilizar el keylogger de forma independiente empleando la siguiente sintaxis:</p>
+                    <p><img src="/posts/codigo_f3l3key/images/cap18.png"></p>
+                    <p>Ten en cuenta que si introduces de forma errónea algunos de los parametros pasados, te arrojará un mensaje de error.</p>
+                    <p>Por tanto, la <strong>ruta</strong> debe ser la ubicación donde se encuentra el keylogger. <strong>El correo emisor</strong> debe utilizar el servicio de Gmail 
+                        y debe tener una estructura correcta. <strong>La contraseña</strong> debe pertenecer al correo emisor y por último, <strong>el correo receptor</strong> debe 
+                        tener una correcta estructura y en este caso puede utilizar cualquier servicio de correo.</p>
+                    <p>
+                        Por otro lado, los archivos que acaban en '.sh' se encargan de automatizar diversas tareas que son necesarias para el 
+                        funcionamiento del keylogger enfocados para esa situación en la que se ha superado exitosamente la escalada de privilegios.
+                    </p>
+                    <br>
+                    <br>
+                    <p>Hasta aquí es todo! Nos vemos para el próximo artículo! Un saludo! :D</p>
+                    <br>
+                    <br>
+                    <p>By f3l3p1n0</p>
+                </div>
+                <br>
+                <br>
+                <!--
+                    <ul class="pagination modal-2">
+                        <li><a href="/main/main.html" class="prev">&laquo </a></li>
+                        <li><a href="/posts/comandos_pentesting/post.html" class="active">1</a></li>
+                        <li><a href="#" class="next" style="pointer-events: none; cursor: default;">  &raquo;</a></li>
+                    </ul>
+                -->
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+        </div>
+
+        <!-- PIE -->
+
+        <footer><h2>© 2023 f3l3p1n0</h2></footer>
+
+        <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
+        <script type="text/javascript" src="/js/script.js"></script>
+        <script async="async" src="/js/animacion_menu.js"></script>
+    </body>
+</html>

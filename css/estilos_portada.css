@@ -1,0 +1,313 @@
+
+@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+
+body {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #0F140F;
+}
+
+.padre {
+    position: absolute;
+    vertical-align: baseline;
+    z-index: -5;
+}
+
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    /*z-index: -1;*/
+  }
+  
+  /*##################### MI PARTE*/
+  
+  /*Parte del efecto de matrix hacker*/
+  
+  .Screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.15);
+    animation: ScreenEffect 0.05s ease infinite;
+    /*cursor: pointer;*/
+  }
+  
+  @keyframes ScreenEffect {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+  
+  .Pulse {
+    animation: Pulse 1.5s ease infinite;
+  }
+  
+  @keyframes Pulse {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+  
+  .DivClass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: transparent;/*#0F140F;*/
+    padding: 5% 5% 5% 5%;
+  }
+  
+  .MatrixTextEffect {
+    color: rgba(179, 26, 245, 0.75);
+    font-family: 'VT323', monospace;
+    font-size: 70px;
+    text-shadow: 0 0 5px rgba(223, 1, 223, 0.5), 0 0 15px rgba(193, 13, 238,1);
+  }
+  
+  /* titulo */
+
+  .title {
+    /*border: 1px solid reD;*/
+    letter-spacing: 1rem;
+  }
+
+  .title h1 {
+    /*border: 1px solid green;*/
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  /* Typewriter */
+  
+  .container {
+    margin-top: 10px;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container p {
+    font-size: 3.4rem;
+    padding: 0.5rem;
+    /*font-weight: bold;*/
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    color: rgba(240, 238, 238, 0.75);
+    text-shadow: 0 0 5px rgba(207, 207, 206, 0.5), 0 0 15px rgba(235, 234, 233, 1);
+  }
+
+  .container p span.typed-text {
+    font-weight: normal;
+    color: rgba(231, 86, 19, 0.877);
+    text-shadow: 0 0 5px rgba(209, 102, 2, 0.5), 0 0 15px rgba(255, 156, 75, 1);
+
+  }
+
+  .container p span.cursor {
+    display: inline-block;
+    background-color: rgba(231, 86, 19, 0.877);
+    margin-left: 0.1rem;
+    width: 20px;
+    animation: blink 1s infinite;
+  }
+
+  .container p span.cursor.typing {
+    animation: none;
+  }
+
+  @keyframes blink {
+    0%  { background-color: rgba(231, 86, 19, 0.877); }
+    49% { background-color: rgba(231, 86, 19, 0.877); }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: rgba(231, 86, 19, 0.877); }
+  }
+  
+    /* SOCIAL MEDIA */
+  
+  .wrapper {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.6rem;
+    z-index: 5;
+  }
+  
+  .wrapper .social div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  i {
+    padding: 0px 10px;
+    margin-top: 185px;
+  }
+  
+  .wrapper i:nth-child(1) {
+      /*color: #4867AA;*/
+    cursor: pointer;
+    /*text-shadow: .17rem .17rem .17rem black;*/
+  }
+  
+  .wrapper i:nth-child(1):hover {
+    text-shadow: none !important;
+  }
+  
+  /* NEON */
+  
+  .sign {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign span .wrapper .fa-youtube-play{
+    /*font-size: 5.6rem;*/
+    /*text-align: center;*/
+    /*line-height: 1;*/
+    color: rgba(255, 0, 0);
+    animation: neon-youtube 0.08s ease-in-out infinite alternate;
+  }
+  
+  .sign span .wrapper .fa-instagram{
+    /*font-size: 5.6rem;*/
+    /*text-align: center;*/
+    /*line-height: 1;*/
+    color: rgb(193, 53, 132);
+    animation: neon-twitter 0.08s ease-in-out infinite alternate;
+  }
+  
+  .sign span .wrapper .fa-github{
+    /*font-size: 5.6rem;*/
+    /*text-align: center;*/
+    /*line-height: 1;*/
+    color: rgb(250, 250, 250);
+    animation: neon-github 0.08s ease-in-out infinite alternate;
+  }
+  
+  .sign span .wrapper .fa-linkedin{
+    /*font-size: 5.6rem;*/
+    /*text-align: center;*/
+    /*line-height: 1;*/
+    color: rgb(10, 102, 194);
+    animation: neon-github 0.08s ease-in-out infinite alternate;
+  }
+  
+  /*-- Animation Keyframes --*/
+  @keyframes neon-youtube {
+    from {
+      text-shadow: 0 0 6px rgba(255, 0, 0, 0.43), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(255, 0, 0, 0.42), 0 0 21px rgba(255, 0, 0, 0.29);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(255, 0, 0, 0.33), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(255, 0, 0, 0.48), 0 0 22px rgba(255, 0, 0, 0.19);
+    }
+  }
+  
+  @keyframes neon-twitter {
+    from {
+      text-shadow: 0 0 6px rgba(225, 48, 108, 0.63), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(225, 48, 108, 0.42), 0 0 21px rgba(29, 161, 242, 0.29);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(225, 48, 108, 0.53), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(225, 48, 108, 0.48), 0 0 22px rgba(29, 161, 242, 0.19);
+    }
+  }
+  
+  @keyframes neon-github {
+    from {
+      text-shadow: 0 0 6px rgba(10, 102, 194, 0.63), 0 0 30px rgba(10, 102, 194, 0.34), 0 0 12px rgba(10, 102, 194, 0.42), 0 0 21px rgba(10, 102, 194, 0.29);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(10, 102, 194, 0.53), 0 0 30px rgba(10, 102, 194, 0.42), 0 0 12px rgba(10, 102, 194, 0.48), 0 0 22px rgba(10, 102, 194, 0.19);
+    }
+  }
+  
+  /* BOTON */
+  
+  button {
+    --text-base: 277deg, 55%, 40%;
+    --text-hover: 307deg, 72%, 86%;
+    --shadow-start: 52deg, 100%, 72%;
+    --shadow-end: 282deg, 90%, 50%;
+    --shadow-inner: 277deg, 90%, 62%;
+    all: unset;
+    color: #fff;/*hsla(var(--text-base), 1);*/
+    font: 700 1.125rem/1.2 Raleway, sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.65em;
+    max-width: 100%;
+    width: 6em;
+    background: inherit;
+    background-clip: padding-box;
+    border: 5px solid #fff;/*hsla(var(--text-base), 1);*/
+    border-radius: 2em;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    transition: 0.25s ease-out;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button::before, button::after {
+    content: "";
+    border-radius: inherit;
+    transition: inherit;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    
+  }
+  
+  button::before {
+    inset: -0.2em;
+    z-index: -1;
+    background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+    filter: blur(1.2em) saturate(1.2);
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    opacity: 0;
+  }
+  
+  button::after {
+    box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px hsla(0deg, 0%, 100%, 0.7), 1px 1px 0 4px #fff;
+    mix-blend-mode: overlay;
+    opacity: 0;
+  }
+  
+  button:hover, button:focus {
+    color: hsla(var(--text-hover), 1);
+    border-color: transparent;
+    box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+  }
+  
+  button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+    transform: none;
+    opacity: 1;
+  }
+  
+/*##################### MI PARTE*/
+

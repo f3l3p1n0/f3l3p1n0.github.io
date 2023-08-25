@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <title>Blog - f3l3p1n0</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link  rel="icon" href="/favicon.png" type="image/png">
+      <link rel="stylesheet" href="/main/buscador/css/main_buscador.css">
+      <link rel="stylesheet" href="/main/css/styles.css">
+      <link rel="stylesheet" href="/main/buscador/css/media_buscador.css">
+      <script src="js/jquery.js"></script>
+      <script src="js/jquery.dataTables.min.js"></script>
+      <link rel="stylesheet" href="css/estilos_buscador.css">
+      <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <!-- CABECERA -->
+
+        <nav>
+
+            <div class="content">
+                <div class="social">
+                    <ul id="social-list">
+                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
+                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
+                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="buscador.html">BUSCAR</a></li>
+                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botón submenu -->
+            
+            <div class="main">
+                <label class="menu-button-wrapper" for="">
+                    <input type="checkbox" class="menu-button">
+                    <div class="icon-wrapper">
+                        <label class="hamburger">
+                        <input class="hamburger-input" type="checkbox">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                        </label>
+                    </div>
+                    <div class="item-list">
+                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                    </div>
+                </label>
+            </div>            
+        </nav>
+
+        <!-- CUERPO -->
+        
+        <div class="row">
+            <aside>
+                <div class="items">
+                    <div class="autor">
+                        <img src="images/avatar.jpeg" alt="f3l3p1n0" itemprop="image">
+                    </div>
+                    <div class="autor_content">
+                        <h3 class="autor_name" itemprop="name">f3l3p1n0</h3>
+                        <p class="autor_bio" itemprop="description">CyberSecurity Student &#129299</p>                   
+                        <div class="autor_urls">
+                            <div align="center" class="socialbtns">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/f3l3p1n0/?igshid=Mzc1MmZhNjY%3D" class="fa fa-lg fa-instagram"></a></li>
+                                    <li><a href="https://github.com/f3l3p1n0" class="fa fa-lg fa-github"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/marc-mañé-lobato/" class="fa fa-lg fa-linkedin"></a></li>
+                                    <li><a href="https://www.youtube.com/@f3l3p1n0" class="fa fa-lg fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Buscador</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Busca tu artículo</h1></div>
+                <header>
+                    <input type="search" id="input-search" placeholder="Clic aquí para buscar tu artículo...">                    
+                    <div class="content-search">
+                        <div class="content-table">
+                            <table id="table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </thead>                                
+                                <tbody>
+                                    <tr>
+                                        <td><a href="/posts/escalada_xampp/post.html">Escalada de privilegios Xampp</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/comandos_pentesting/post.html">Comandos Linux Ciberseguridad</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/brute_moodle/post.html">Script Brute Force Moodle</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/conexion_remota/post.html">Conexión inversa a través de VPN</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/f3l3key/post.html">Keylogger para Ubuntu</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/codigo_f3l3key/post.html">Explicando cómo funciona un Keylogger</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/posts/dotfiles_archlinux/post.html">Personalizando tu ArchLinux</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </header>
+            <script src="js/search.js"></script>
+        </div>
+
+        <!-- PIE -->
+
+        <footer><h2>© 2023 f3l3p1n0</h2></footer>
+        <script async="async" src="/js/animacion_menu.js"></script>
+    </body>
+</html>

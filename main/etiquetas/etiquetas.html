@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog - f3l3p1n0</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="icon" href="/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/main/etiquetas/css/main_etiquetas.css">
+        <link rel="stylesheet" href="/main/css/styles.css">
+        <link rel="stylesheet" href="/main/etiquetas/css/media_etiquetas.css">
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link class="cssdeck" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            if (window.matchMedia("(min-width: 980px)").matches) {
+                $(window).scroll(function(){
+                    $(".items").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+                });
+                var totaltext = "";
+                for (var i = 0; i < 100; i++) {
+                    totaltext += "scroll!<br />";
+                }
+            }
+        </script> 
+    </head>
+    <body>
+        
+        <!-- CABECERA -->
+
+        <nav>
+            
+            <div class="content">
+                <div class="social">
+                    <ul id="social-list">
+                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
+                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="etiquetas.html">ETIQUETAS</a></li>
+                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
+                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Botón submenu -->
+            
+            <div class="main">
+                <label class="menu-button-wrapper" for="">
+                    <input type="checkbox" class="menu-button">
+                    <div class="icon-wrapper">
+                        <label class="hamburger">
+                        <input class="hamburger-input" type="checkbox">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                        </label>
+                    </div>
+                    <div class="item-list">
+                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                    </div>
+                </label>
+            </div>            
+        </nav>
+
+        <!-- CUERPO -->
+        
+        <div class="row">
+            <aside>
+                <div class="items">
+                    <div class="autor">
+                        <img src="images/avatar.jpeg" alt="f3l3p1n0" itemprop="image">
+                    </div>
+                    <div class="autor_content">
+                        <h3 class="autor_name" itemprop="name">f3l3p1n0</h3>
+                        <p class="autor_bio" itemprop="description">CyberSecurity Student &#129299</p>                   
+                        <div class="autor_urls">
+                            <div align="center" class="socialbtns">
+                                <ul>
+                                    <li><a href="https://www.instagram.com/f3l3p1n0/?igshid=Mzc1MmZhNjY%3D" class="fa fa-lg fa-instagram"></a></li>
+                                    <li><a href="https://github.com/f3l3p1n0" class="fa fa-lg fa-github"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/marc-mañé-lobato/" class="fa fa-lg fa-linkedin"></a></li>
+                                    <li><a href="https://www.youtube.com/@f3l3p1n0" class="fa fa-lg fa-youtube"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Etiquetas</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Artículos por categoría</h1></div>
+                <div class="container">          
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/codigo_f3l3key/post.html" rel="permalink">Explicando cómo funciona un Keylogger</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">Abril 06, 2023</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/codigo_f3l3key/images/codigo_keylogger.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            Entra y aprende línea por línea el funcionamiento de un keylogger basado en el lenguaje de programación Python.
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Ciberseguridad</span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/f3l3key/post.html" rel="permalink">Keylogger para Ubuntu</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">Abril 04, 2023</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/f3l3key/images/keylogger.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            En este artículo podrás descargar un keylogger y aprenderás a como utilizarlo. Este keylogger por el momento es compatible con Ubuntu.
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Ciberseguridad</span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/conexion_remota/post.html" rel="permalink">Conexión inversa a través de VPN</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">November 13, 2022</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/conexion_remota/images/cap19.png" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            ¿Te gustaría saber como conectarte a una máquina en la que tienes privilegios pero en cualquier parte del mundo? Entra y descúbrelo!
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Ciberseguridad<span>
+                                    </article>
+                                </div>
+                            </div>               
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/brute_moodle/post.html" rel="permalink">Script Brute Force Moodle</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">November 12, 2022</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/brute_moodle/images/cap10.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            Entra y conoce el script que he creado para realizar fuerza bruta al login de cualquier Moodle. Pd: El script está pendiente de mejora pero funciona correctamente.
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Ciberseguridad<span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/escalada_xampp/post.html" rel="permalink">Escalada de privilegios Xampp</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">Octubre 31, 2022</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/escalada_xampp/images/cap2.png" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            Te hablaré de la escalada de privilegios que conseguí en una máquina a partir del archivo de configuración de Xampp.
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Ciberseguridad<span></span>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="selected">Ciberseguridad</div>
+                    </div>
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/dotfiles_archlinux/post.html" rel="permalink">Personalizando tu ArchLinux</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">Junio 03, 2023</time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/dotfiles_archlinux/images/rices.png" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            ¿Te has instalado ArchLinux con algún entorno gráfico y te parece muy simple? Si estás buscando personalizarlo, ¡este es tu artículo!
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Linux</span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="list__item">
+                                    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                                        <h2 class="archive__item-title" itemprop="headline">
+                                            <a href="/posts/comandos_pentesting/post.html" rel="permalink">Comandos Linux Ciberseguridad</a>
+                                        </h2>
+                                        <p class="page__meta">
+                                            <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
+                                            <time datetime="2020-11-29T00:00:00+00:00">November 02, 2022 </time>
+                                        </p>
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/comandos_pentesting/images/cap1.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            En este artículo te hablaré de una gran cantidad de comandos que pueden ser utilizados en el mundo de la Ciberseguridad.
+                                            Pd: Iré actualizando la lista de comandos.
+                                        </p>
+                                        <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
+                                        <span class="page__meta btn" rel="tag">Linux</span>
+                                    </article>
+                                </div>
+                            </div>               
+                        </div>
+                        <div class="selected">Linux</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PIE -->
+
+        <footer><h2>© 2023 f3l3p1n0</h2></footer>
+        <script async="async" src="/js/animacion_menu.js"></script>
+        <script src="/main/etiquetas/js/main.js"></script>
+    </body>
+</html>

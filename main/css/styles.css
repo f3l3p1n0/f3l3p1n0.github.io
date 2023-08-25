@@ -1,0 +1,369 @@
+/* PARA CONFIGURAR LOS ESTILOS DEL SCROLL */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(189, 147, 249);
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(206, 171, 255); 
+}
+
+/* ######################################### */
+
+.hamburger {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*border-radius: 20px;
+  /*background: #f953c6; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #da2287, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*transform: rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);*/
+}
+.hamburger .hamburger-input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.hamburger .hamburger-line {
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  position: relative;
+}
+
+.hamburger .hamburger-line.first, .hamburger .hamburger-line.third {
+  width: 50%;
+}
+.hamburger .hamburger-line.third {
+  margin-left: 50%;
+  transform-origin: left;
+}
+
+.menu-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.menu-button-wrapper .item-list {
+  position: absolute;
+  top: 83px;
+  transform: translateX(-50%) scale(0);
+  transform-origin: center;
+  transition: all 0.4s cubic-bezier(0.54, -0.1, 0.57, 0.57);
+  background-color: #242424;
+  color: #fff;
+  width: 200px;
+  left: -2rem;
+  padding: 15px 0;
+  z-index: 1;
+  text-align: left;
+  border-radius: 100px;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.menu-button-wrapper .item-list div {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.menu-button-wrapper .menu-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-button:checked ~ .item-list {
+  transform: translateX(-50%) scale(1);
+  border-radius: 20px;
+  opacity: 1;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.second {
+  transform: rotate(-45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.first {
+  transform: translate(2px, 8px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.third {
+  transform: translate(11px, -3px) rotate(-135deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger:before {
+  transform: rotate(45deg);
+}
+
+
+/* ESTILOS PARA EL SOCIAL MEDIA MENU */
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+.autor_urls {
+  display: inline-block;
+}
+
+.socialbtns a, .socialbtns a:hover {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.socialbtns, .socialbtns ul, .socialbtnS li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+  color: #FFF;
+  text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -webkit-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -moz-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  -o-text-shadow: 1px 1px 0px #000,
+      1px -1px 0px #000,
+      -1px 1px 0px #000,
+      -1px -1px 0px #000;
+  transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+  color: #000;
+  text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -webkit-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -moz-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  -o-text-shadow: 1px 1px 0px #fff,
+      1px -1px 0px #fff,
+      -1px 1px 0px #fff,
+      -1px -1px 0px #fff;
+  transition: all ease 0.5s;
+  -moz-transition: all ease-in 0.5s;
+  -webkit-transition: all ease-in 0.5s;
+  -o-transition: all ease-in 0.5s;
+}
+
+/* ESTILOS PARA EL DROPDOWN MENU */
+
+.content {
+  /*border: 1px solid red;*/
+  width: 80%;
+  margin-left: 38%;
+  margin-top: 10px;
+  margin-right: 3rem;
+  /*border: 1px solid red;*/
+}
+
+html .list-item, body .list-item {
+  display: inline-block;
+  /*width: 115px;*/
+  /*text-align: center;*/
+  margin-right: 15px;
+  /*bordeR: 1px solid green;*/
+}
+html .list-item .item-link, body .list-item .item-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight:  bolder;
+  transition: 0.3s ease-out all;
+}
+html .list-item .item-link:focus, body .list-item .item-link:focus {
+  outline: none;
+}
+html .list-item .item-link:after, body .list-item .item-link:after {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 2.5px;
+  display: block;
+  z-index: 100;
+  background-color: rgb(255, 121, 198);
+  transition: 0.3s ease-out all;
+  left: 50%;
+  top: 5px;
+  transform: translateX(-50%);
+}
+html .list-item .item-link:hover:after, body .list-item .item-link:hover:after {
+  width: 100%;
+}
+html .list-item .item-link:hover {
+  color: #dadada;
+}
+.randomCharacter {
+  display: inline-block;
+  height: 10px;
+}
+
+/* ESTILOS PARA EL PAGINATION */
+
+.pagination {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 10px;
+}
+.pagination li {
+  display: inline;
+  text-align: center;
+}
+.pagination a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #fff;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  line-height: 1.5;
+}
+.pagination a.active {
+  cursor: default;
+}
+.pagination a:active {
+  outline: none;
+}
+
+.modal-2 li:first-child a {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.modal-2 li:last-child a {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+.modal-2 a {
+  border-color: #ddd;
+  color: #999;
+  background: #404040;
+}
+.modal-2 a:hover {
+  color: rgb(189, 147, 249);
+  background-color: #eee;
+}
+.modal-2 a.active, .modal-2 a:active {
+  border-color: rgb(189, 147, 249);
+  background: rgb(189, 147, 249);
+  color: #fff;
+}
+
+/* ESTILOS PARA EL BOTON BACK TO TOP */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: rgb(189, 147, 249);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 25px;
+  transition: transform 250ms;
+  opacity: 0.8;
+  transition: opacity 250ms;
+  transition: transform ease .5s, box-shadow ease .5s;
+}
+
+#topBtn:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+/* ANIMACION PARA LOS BOX */
+
+#reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+#reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
