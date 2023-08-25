@@ -15,9 +15,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 4em 0em 0em 0em;
     padding: 0;
-    background-color: rgb(40, 42, 54);
+    background-color: #1f2833;
 }
 
 nav {
@@ -25,7 +25,6 @@ nav {
     flex-direction: row;
     padding: 5px;
     position: relative;
-    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 nav a {
@@ -46,7 +45,7 @@ nav a {
 footer {
     padding: 30px;
     margin-top: auto;
-    background-color: #44475a;
+    background-color: rgba(0, 0, 0, 0.32);
 }
 
 footer h2 {
@@ -95,6 +94,7 @@ aside {
     border-radius: 50%;
 }
 
+
 section {
     flex: 70%;
     padding: 20px;
@@ -114,16 +114,6 @@ section {
     width: 55%;
 }
 
-section h3 {
-    font-size: 1em;
-}
-
-section h1, section h2, section h3, section h4, section h5, section h6 {
-    margin: 2em 0 0.5em;
-    line-height: 1.2;
-    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-    font-weight: bold;
-}
 
 .list__item {
     width: 55%;
@@ -150,17 +140,6 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
     text-overflow: ellipsis;
 }
 
-.archive__item-title a {
-    color: rgb(189, 147, 249);
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.archive__item-title a:hover {
-    color: rgb(219, 194, 253);
-}
-
 .page__meta {
     margin: 0 0 4px;
     font-size: 0.9em;
@@ -185,11 +164,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 .svg-inline--fa {
     color: #fff;
-    margin-right: 1.5%;
-}
-
-.archive__item .btn:hover {
-    color: rgb(255, 184, 108);
+    margin-right: .5%;
 }
 
 .seccion {
@@ -197,7 +172,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 }
 
 .seccion p {
-    color: rgb(207, 207, 207);
+    color: rgb(230, 230, 230);
     line-height: 155%;
     font-family: Georgia;
     font-size: 1.2em;
@@ -221,8 +196,8 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 /* ZOOM IMAGE */
 
-#myImg {
-    border-radius: 10px;
+.zoomable-image {
+    border-radius: 13px;
     cursor: pointer;
     transition: 0.3s;
     display: block;
@@ -230,7 +205,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
     margin-right: auto
 }
 
-#myImg:hover {opacity: 0.7;}
+.zoomable-image:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -248,9 +223,9 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
+    margin:auto;
     display: block;
-    width: 40%;
+    border-radius: 13px;
 }
 
 /* Caption of Modal Image */
@@ -310,15 +285,6 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-/*METERLO EN EL MEDIA ####################################*/
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){

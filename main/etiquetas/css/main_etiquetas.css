@@ -16,9 +16,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 4em 0em 0em 0em;
     padding: 0;
-    background-color: rgb(40, 42, 54);
+    background-color: #1f2833;
 }
 
 nav {
@@ -26,7 +26,6 @@ nav {
     flex-direction: row;
     padding: 5px;
     position: relative;
-    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 nav a {
@@ -47,7 +46,7 @@ nav a {
 footer {
     padding: 30px;
     margin-top: auto;
-    background-color: #44475a;
+    background-color: rgba(0, 0, 0, 0.32);
 }
 
 footer h2 {
@@ -153,14 +152,14 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 }
 
 .archive__item-title a {
-    color: rgb(189, 147, 249);
+    color: #66fcf1;
     text-decoration: none;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
 .archive__item-title a:hover {
-    color: rgb(219, 194, 253);
+    color: #c3fbff;
 }
 
 .page__meta {
@@ -210,7 +209,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 .breadcrumbs a {
     text-decoration: none;
-    color: rgb(189, 147, 249);
+    color: #61dde6;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
@@ -224,7 +223,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
     font-size: 1.8em;
     font-weight: bold;
     font-family: 'Dancing Script';
-    color: #ff79c6;
+    color: #E7F6F2;
 }
 
 .taxonomy__index ul {
@@ -266,7 +265,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
   }
   
   .select-box .options-container {
-    background: #44475a;
+    background: #395B64;
     color: #f5f6fa;
     max-height: 0;
     width: 100%;
@@ -280,7 +279,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
   }
   
   .selected {
-    background: #44475a;
+    background: #395B64;
     border-radius: 8px;
     margin-bottom: 8px;
     color: #f5f6fa;

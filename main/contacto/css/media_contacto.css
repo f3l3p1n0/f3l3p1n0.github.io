@@ -41,8 +41,8 @@
         height: 350px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 }
 
@@ -67,8 +67,8 @@
         height: 300px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 }
 
@@ -84,8 +84,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .row {
@@ -119,8 +119,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .about {
@@ -166,8 +166,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -213,8 +213,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -261,8 +261,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -313,8 +313,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -366,8 +366,8 @@
         margin-bottom: -75px;
     }
  
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -417,8 +417,8 @@
         margin-bottom: -75px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .container {
@@ -492,9 +492,7 @@
     #etiquetas, #contacto, #buscador {
         display: none;
     }
-    #inicio {
-        margin-left: -25px;
-    }
+
     .iniciodrop {
         display: none;
     }

@@ -17,9 +17,9 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 4em 0em 0em 0em;
     padding: 0;
-    background-color: rgb(40, 42, 54);
+    background-color: #1f2833;
 }
 
 nav {
@@ -27,7 +27,6 @@ nav {
     flex-direction: row;
     padding: 5px;
     position: relative;
-    border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 nav a {
@@ -37,6 +36,7 @@ nav a {
     /*position: relative;*/
     font-weight: 550;
     /*margin-right: 20px;*/
+    
 }
 
 .row {
@@ -48,7 +48,7 @@ nav a {
 footer {
     padding: 30px;
     margin-top: auto;
-    background-color: #44475a;
+    background-color: rgba(0, 0, 0, 0.32);
 }
 
 footer h2 {
@@ -109,7 +109,7 @@ section {
     font-size: 1.8em;
     font-weight: bold;
     font-family: 'Dancing Script';
-    color: #ff79c6;
+    color: #E7F6F2;
     border-bottom: 1px solid rgb(231, 231, 231);
     width: 55%;
 }
@@ -146,7 +146,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 .list__item h2 {
     margin-top: 0%;
-    color: rgb(189, 147, 249);
+    color: #66fcf1;
 }
 
 .svg-inline--fa {
@@ -193,5 +193,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
     color: #fff;
     background: #000;
 }
+
+
 
 

@@ -32,7 +32,7 @@
 
             .breadcrumbs a {
                 text-decoration: none;
-                color: rgb(189, 147, 249);
+                color: #61dde6;
                 -webkit-transition: all 0.1s ease-in-out;
                 transition: all 0.1s ease-in-out;
             }
@@ -43,11 +43,11 @@
 
             .titulo_articulos h1 {
                 margin: 1em 0 1em;
-                font-size: 1.563em;
+                font-size: 1.8em;
                 font-weight: bold;
-                font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+                font-family: Georgia;
                 color: #fff;
-            }
+            }   
 
             .taxonomy__index ul {
                 margin: 1.414em 0;
@@ -89,38 +89,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
 
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
         </nav>
 
         <!-- CUERPO -->
@@ -148,6 +151,7 @@
                 </div>
             </aside>
             <section>
+                <br><br>
                 <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Keylogger para Ubuntu</div>
                 <div class="titulo_articulos"><h1 id="page-title" class="page__title">Keylogger para Ubuntu (versión 20 o superior)</h1></div>
                 <p class="page__meta">
@@ -155,11 +159,12 @@
                     <time datetime="2020-11-29T00:00:00+00:00">Abril 04, 2023</time>
                 </p>
                 <div class="seccion">
+                    <br>
                     <p>En este artículo te mostraré cómo descargar un KEYLOGGER y cómo ponerlo en funcionamiento. Con este podrás generar un archivo con todas las pulsaciones del teclado y enviarlo por correo electrónico.</p>
                         
                     <p>Un keylogger es un tipo de software malicioso que se instala en un ordenador 
                         sin el conocimiento del usuario y registra todas las pulsaciones de teclas realizadas en el teclado, incluyendo contraseñas, nombres de usuario y otra información personal.</p>
-                    <p><img src="/posts/f3l3key/images/cap1.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap1.PNG"></p>
                     <br>
                     <p><u>Requisitos para el keylogger</u></p>
                     <p>
@@ -171,51 +176,51 @@
                     <br>
                     <p><u>Explicación del proceso</u></p>
                     <p>Lo primero que vamos a hacer es situarnos. Disponemos de la siguiente máquina (Víctima) basada en Ubuntu con la versión 20.04</p>
-                    <p><img src="/posts/f3l3key/images/cap2.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap2.png"></p>
                     <p>Ahora lo que haremos es descargar el keylogger con sus archivos necesarios. Es necesario que tengas en cuenta la decisión de dónde alojarás el keylogger.
                         Recomiendo que sea en un lugar donde la víctima no lo vaya a encontrar (Más adelante subiré un artículo para aprender como ofuscar o encriptar el código).
                     </p>
                     <p>Para descargar el keylogger podemos ir al siguiente enlace: <a style="color:aqua; text-decoration: none;" href="https://github.com/f3l3p1n0/f3l3key">Descargar aquí</a></p>
                     <p>O también podemos emplear la siguiente comanda:</p>
-                    <p><img src="/posts/f3l3key/images/cap3.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap3.png"></p>
                     <p>Una vez que lo hayamos descargado, iremos al código del archivo 'tester.sh' y nos situaremos en la siguiente línea:</p>
-                    <p><img src="/posts/f3l3key/images/cap4.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap4.png"></p>
                     <p>En este archivo será el único que tendrás que realizar varios cambios. Muy importante que por cada cambio que realices, respetes la estructura tal y como la estás viendo.</p>
                     <p>Primeramente, debes agregar la ruta donde se encuentra actualmente el keylogger. En mi caso se encuentra en Descargas.</p>
-                    <p><img src="/posts/f3l3key/images/cap5.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap5.png"></p>
                     <p>Una vez especificada la ruta, tendrás que escribir el correo de la cuenta que va a emitir los mensajes. En este caso es obligatorio que
                         sea una cuenta basada en Gmail ya que el keylogger utiliza los servicios de Gmail para el envio del archivo con las pulsaciones.
                     </p>
-                    <p><img src="/posts/f3l3key/images/cap6.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap6.png"></p>
                     <p>El siguiente paso sería generar una contraseña. Esta contraseña debes generarla con la cuenta de Gmail que has creado para enviar los correos. 
                         Para ello nos dirijiremos al siguiente apartado:</p>
-                    <p><img src="/posts/f3l3key/images/cap7.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap7.png"></p>
                     <p>Después en el buscador escribirás lo siguiente:</p>
-                    <p><img src="/posts/f3l3key/images/cap8.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap8.png"></p>
                     <p>Finalmente en este apartado podrás generar la clave para aplicaciones:</p>
-                    <p><img src="/posts/f3l3key/images/cap9.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap9.png"></p>
                     <p>Esta contraseña tendrás que copiarla y pegarla en el siguiente apartado del archivo 'tester.sh'</p>
-                    <p><img src="/posts/f3l3key/images/cap10.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap10.png"></p>
                     <p>Por último solo te queda especificar la cuenta de correo que se encargará de recibir los mensajes. Esta cuenta de correo puede ser de Gmail, Hotmail o lo que prefieras:</p>
-                    <p><img src="/posts/f3l3key/images/cap11.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap11.png"></p>
                     <p>Una vez preparado el archivo, lo guardaremos y pasaremos a aplicar permisos de ejecución a los 3 archivos:</p>
-                    <p><img src="/posts/f3l3key/images/cap12.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap12.png"></p>
                     <p>Posteriormente, ejecutaremos el archivo 'installer.sh'. Debes ser usuario root:</p>
-                    <p><img src="/posts/f3l3key/images/cap13.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap13.png"></p>
                     <p>Habrá un momento en el que el programa se detendrá en la siguiente sección:</p>
-                    <p><img src="/posts/f3l3key/images/cap14.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap14.png"></p>
                     <p>En este caso debemos de escribir el numero 1</p>
-                    <p><img src="/posts/f3l3key/images/cap15.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap15.png"></p>
                     <p>Este archivo que se nos habrá abierto, tendremos que guardarlo presionando la tecla ctrl + o y luego enter</p>
-                    <p><img src="/posts/f3l3key/images/cap16.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap16.png"></p>
                     <p>Posteriormente se nos habrá creado una nueva tarea Cron. Este va a permitir que el keylogger pueda estar funcionando constantemente e incluso si la máquina se reinicia:</p>
-                    <p><img src="/posts/f3l3key/images/cap17.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap17.png"></p>
                     <p>Ahora si realizamos una prueba, por ejemplo en un login cualquiera:</p>
-                    <p><img src="/posts/f3l3key/images/cap18.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap18.png"></p>
                     <p>Veremos como en el correo receptor, recibiremos un correo con un archivo:</p>
-                    <p><img src="/posts/f3l3key/images/cap19.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap19.png"></p>
                     <p>Y si lo abrimos podremos visualizar la pulsaciones de las teclas que ha realizado la víctima:</p>
-                    <p><img src="/posts/f3l3key/images/cap20.png"></p>
+                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap20.png"></p>
                     <br>
                     <p>Algo que hay que tener en cuenta es que este keylogger está programado de tal manera que te enviará un correo cada 10 minutos. En este artículo
                         he disminuido el tiempo para enseñarte el ejemplo y así no tuviera que esperar tanto tiempo.
@@ -229,6 +234,9 @@
                     <br>
                     <br>
                 </div>
+                <div id="myModal" class="modal">
+                    <img class="modal-content" id="img01">
+                </div>
             </section>
         </div>
 
@@ -238,6 +246,8 @@
 
         <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
         <script type="text/javascript" src="/js/script.js"></script>
-        <script async="async" src="/js/animacion_menu.js"></script> 
+        <script async="async" src="/js/animacion_menu.js"></script>
+        <script async="async" src="/js/zoomimage.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

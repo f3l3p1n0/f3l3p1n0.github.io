@@ -32,7 +32,7 @@
 
             .breadcrumbs a {
                 text-decoration: none;
-                color: rgb(189, 147, 249);
+                color: #61dde6;
                 -webkit-transition: all 0.1s ease-in-out;
                 transition: all 0.1s ease-in-out;
             }
@@ -43,9 +43,9 @@
 
             .titulo_articulos h1 {
                 margin: 1em 0 1em;
-                font-size: 1.563em;
+                font-size: 1.8em;
                 font-weight: bold;
-                font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+                font-family: Georgia;
                 color: #fff;
             }
 
@@ -89,38 +89,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
 
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
         </nav>
 
         <!-- CUERPO -->
@@ -148,6 +151,7 @@
                 </div>
             </aside>
             <section>
+                <br><br>
                 <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Escalada de privilegios Xampp</div>
                 <div class="titulo_articulos"><h1 id="page-title" class="page__title">Escalada de privilegios Xampp</h1></div>
                 <p class="page__meta">
@@ -155,30 +159,31 @@
                     <time datetime="2020-11-29T00:00:00+00:00">Octubre 31, 2022</time>
                 </p>
                 <div class="seccion">
+                    <br>
                     <p>Hoy te relato una experiencia que me ocurrió en mi centro de estudios. Se trata de haber conseguido una escalada de privilegios 
                         aprovechando una debilidad en cierta configuración. </p>
                     <p>Concretamente la escalada de privilegios fue realizada exitosamente en un sistema operativo basado en Ubuntu.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap1.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap1.PNG"></p>
                     <p>Investigando, me di cuenta que la máquina tenía habilitado un servicio web y un gestor de base de datos. Resultó que 
                         detrás de estos servicios se encontraba Xampp, un software que contiene herramientas para gestionarlos.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap2.png"></p>
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap2.png"></p>
                     <p>Seguidamente fui a comprobar sus archivos de configuración y es allí donde encontré la debilidad. Todo se trataba de una mala 
                         configuración en los permisos que estaban implementados en los archivos de configuración de Xampp.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap3.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap3.PNG"></p>
                     <p>Concretamente se trataba de el archivo de configuración /opt/lampp/xampp. Este archivo es utilizado para realizar tareas como reiniciar el servidor. 
                         Me preguntaba por qué el archivo tenía esos permisos establecidos, ya que de lo normal cuando instalas Xampp por primera vez este archivo se establece con permisos 755.</p>
                     <p>Por otro lado intenté verificar que permisos sudo tenía el usuario que estaba manejando hasta ahora. Y resulta que podía hacer ciertas acciones como root.</p>
-                    <p><img src="/posts/escalada_xampp/images/cap4.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap4.PNG"></p>
                     <p>Llegué a la conclusión de que un administrador los había configurado mal o se había despistado.</p>  
                     <br>
                     <p>Ahora intenté realizar la escalada para ser root. Lo único que hice fue modificar el archivo Xampp de la siguiente manera:</p>
-                    <p><img src="/posts/escalada_xampp/images/cap5.PNG"></p> 
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap5.PNG"></p> 
                     <p>Guardé el archivo, y como tenía permisos de escritura se realizaron los cambios. Seguidamente ejecuté el servicio Xampp y se pudo
                         realizar con éxito la escalada de privilegios.
                     </p>
-                    <p><img src="/posts/escalada_xampp/images/cap6.PNG"></p> 
-                    <p>Esto nos hace llegar a la conclusión de que hay que tener muy en cuenta qué estás configurando en cada sitio, directorio, programa, archivo, 
-                        en el sistema. Debemos pensar previamente qué consecuencia se va a desatar si realizas dicha acción y una vez realizada controlar y repasar qué se ha configurado. 
+                    <p><img class="zoomable-image" src="/posts/escalada_xampp/images/cap6.PNG"></p> 
+                    <p>Esto nos hace llegar a la conclusión de que hay que tener muy en cuenta cuáles son tus acciones cuando estás configurando en cada directorio, programa, archivo, 
+                        etc. Debemos pensar previamente qué consecuencia se va a producir en el momento en el que realizas dicha acción. Y una vez realizada, controlar y repasar lo que se ha configurado. 
                     </p>
                     <br>
                     <p>Des de aquí me despido. Hasta el próximo artículo! :D</p>
@@ -187,6 +192,9 @@
                     <p>By f3l3p1n0</p>
                     <br>
                     <br>
+                </div>
+                <div id="myModal" class="modal">
+                    <img class="modal-content" id="img01">
                 </div>
             </section>
         </div>
@@ -197,6 +205,8 @@
 
         <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
         <script type="text/javascript" src="/js/script.js"></script>
-        <script async="async" src="/js/animacion_menu.js"></script> 
+        <script async="async" src="/js/animacion_menu.js"></script>
+        <script async="async" src="/js/zoomimage.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

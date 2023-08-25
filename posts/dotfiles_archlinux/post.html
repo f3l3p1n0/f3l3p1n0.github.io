@@ -32,7 +32,7 @@
 
         .breadcrumbs a {
             text-decoration: none;
-            color: rgb(189, 147, 249);
+            color: #61dde6;
             -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;
         }
@@ -43,9 +43,9 @@
 
         .titulo_articulos h1 {
             margin: 1em 0 1em;
-            font-size: 1.563em;
+            font-size: 1.8em;
             font-weight: bold;
-            font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+            font-family: Georgia;
             color: #fff;
         }
 
@@ -85,10 +85,6 @@
             color: #ff79c6;
         }
 
-        .seccion p {
-            text-align:left;
-        }
-
       </style>
     </head>
     <body>
@@ -97,38 +93,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
-            
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
+
         </nav>
 
         <!-- CUERPO -->
@@ -156,6 +155,7 @@
                 </div>
             </aside>
             <section>
+                <br><br>
                 <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Personalizando tu ArchLinux</div>
                 <div class="titulo_articulos"><h1 id="page-title" class="page__title">Personalizando tu ArchLinux</h1></div>
                 <p class="page__meta">
@@ -163,19 +163,20 @@
                     <time datetime="2020-11-29T00:00:00+00:00">Junio 03, 2023</time>
                 </p>
                 <div class="seccion">
+                    <br>
                     <p>¡Bienvenid@ a este artículo, ¿Estás buscando la manera de personalizar tu ArchLinux?
                     Aquí podrás conocer algunas de mis configuraciones y personalizaciones que he ido realizando a lo largo de mi tiempo con el uso de Arch Linux. <br><br>
                     Siéntete libre de tomar cualquier cosa de los archivos, ¡solo recuerda darme crédito por ello! :)</p><br>
-                    <p><img src="/posts/dotfiles_archlinux/images/tit_skullsage.png"></p>
-                    <p><img src="/posts/dotfiles_archlinux/images/skullsage.png"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/tit_skullsage.png"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/skullsage.png"></p>
                     <p>Dotfiles: <a href="https://github.com/f3l3p1n0/skullsage" style="color:#95dce0; text-decoration: none;"><strong>Click aquí</strong></a></p>
                     <br>
-                    <p><img src="/posts/dotfiles_archlinux/images/tit_bluehypr.png"></p>
-                    <p><img src="/posts/dotfiles_archlinux/images/bluehypr.png"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/tit_bluehypr.png"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/bluehypr.png"></p>
                     <p>Dotfiles: <a href="https://github.com/f3l3p1n0/bluehypr" style="color:#95dce0; text-decoration: none;"><strong>Click aquí</strong></a></p>
                     <br>
-                    <p><img src="/posts/dotfiles_archlinux/images/tit_pinkhypr.gif"></p>
-                    <p><img src="/posts/dotfiles_archlinux/images/pinkhypr.png"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/tit_pinkhypr.gif"></p>
+                    <p><img class="zoomable-image" src="/posts/dotfiles_archlinux/images/pinkhypr.png"></p>
                     <p>Dotfiles: <a href="https://github.com/f3l3p1n0/pinkhypr" style="color:#95dce0; text-decoration: none;"><strong>Click aquí</strong></a></p>
                     <br>
                     <br>
@@ -183,6 +184,9 @@
                     <br>
                     <br>
                     <p>By f3l3p1n0</p>
+                </div>
+                <div id="myModal" class="modal">
+                    <img class="modal-content" id="img01">
                 </div>
                 <br>
                 <br>
@@ -207,5 +211,7 @@
         <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
         <script type="text/javascript" src="/js/script.js"></script>
         <script async="async" src="/js/animacion_menu.js"></script>
+        <script async="async" src="/js/zoomimage.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

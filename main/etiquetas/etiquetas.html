@@ -29,39 +29,42 @@
         <!-- CABECERA -->
 
         <nav>
-            
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
 
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
         </nav>
 
         <!-- CUERPO -->
@@ -89,6 +92,7 @@
                 </div>
             </aside>
             <section>
+                <br><br>
                 <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Etiquetas</div>
                 <div class="titulo_articulos"><h1 id="page-title" class="page__title">Artículos por categoría</h1></div>
                 <div class="container">          
@@ -185,7 +189,6 @@
                                 </div>
                             </div>
                         </div>
-                
                         <div class="selected">Ciberseguridad</div>
                     </div>
                     <div class="select-box">
@@ -207,28 +210,32 @@
                                         <span class="page__meta btn" rel="tag">Linux</span>
                                     </article>
                                 </div>
-                            </div>
+                            </div>               
+                        </div>
+                        <div class="selected">Linux</div>
+                    </div>
+                    <div class="select-box">
+                        <div class="options-container">
                             <div class="option">
                                 <div class="list__item">
                                     <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
                                         <h2 class="archive__item-title" itemprop="headline">
-                                            <a href="/posts/comandos_pentesting/post.html" rel="permalink">Comandos Linux Ciberseguridad</a>
+                                            <a href="/posts/backup_sistema/post.html" rel="permalink">¿Cómo realizar un backup de todo tu sistema?</a>
                                         </h2>
                                         <p class="page__meta">
                                             <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
-                                            <time datetime="2020-11-29T00:00:00+00:00">November 02, 2022 </time>
+                                            <time datetime="2020-11-29T00:00:00+00:00">Agosto 23, 2023</time>
                                         </p>
-                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/comandos_pentesting/images/cap1.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
-                                            En este artículo te hablaré de una gran cantidad de comandos que pueden ser utilizados en el mundo de la Ciberseguridad.
-                                            Pd: Iré actualizando la lista de comandos.
+                                        <p class="archive__item-excerpt" itemprop="description"><img src="/posts/backup_sistema/images/backup.jpg" alt="" style="float: right; margin-right:10px; margin-left:20px; margin-bottom:10px; height:120px; width: 210px;">
+                                            ¿Te gustaría aprender a realizar una copia de seguridad de todo tu sistema Windows? Entra y lee este artículo!
                                         </p>
                                         <svg class="svg-inline--fa fa-tags fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg>
-                                        <span class="page__meta btn" rel="tag">Linux</span>
+                                        <span class="page__meta btn" rel="tag">Informática</span>
                                     </article>
                                 </div>
                             </div>               
                         </div>
-                        <div class="selected">Linux</div>
+                        <div class="selected">Informática</div>
                     </div>
                 </div>
             </section>
@@ -239,5 +246,6 @@
         <footer><h2>© 2023 f3l3p1n0</h2></footer>
         <script async="async" src="/js/animacion_menu.js"></script>
         <script src="/main/etiquetas/js/main.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

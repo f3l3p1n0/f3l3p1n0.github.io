@@ -12,8 +12,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor img {
@@ -51,8 +51,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .select-box {
@@ -70,8 +70,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor img {
@@ -105,8 +105,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -168,8 +168,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -231,8 +231,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -294,8 +294,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -357,8 +357,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -420,8 +420,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -501,8 +501,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -569,8 +569,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -656,9 +656,7 @@
     #etiquetas, #contacto, #buscador {
         display: none;
     }
-    #inicio {
-        margin-left: -25px;
-    }
+
     .iniciodrop {
         display: none;
     }

@@ -30,38 +30,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
-            
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
+
         </nav>
 
         <!-- CUERPO -->
@@ -124,5 +127,6 @@
         <script type="text/javascript" src="/js/script.js"></script>
         <script async="async" src="/js/animacion_menu.js"></script>
         <script type="text/javascript" src="/js/scroll.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

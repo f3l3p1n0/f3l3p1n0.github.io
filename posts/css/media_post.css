@@ -12,8 +12,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor img {
@@ -65,8 +65,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .list__item {
@@ -90,8 +90,8 @@
         flex-direction: row;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor img {
@@ -130,8 +130,8 @@
         margin-left: 0%;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -140,7 +140,7 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
     .autor img {
@@ -202,11 +202,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -272,11 +272,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -342,11 +342,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -411,11 +411,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -480,11 +480,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -561,11 +561,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -642,11 +642,11 @@
 
     aside {
         flex: 0%;
-        margin-bottom: -75px;
+        margin-bottom: -100px;
     }
 
-    .content {
-        margin-left: 0%;
+    .header-menu {
+        text-align: left;
     }
 
     .autor_urls {
@@ -744,9 +744,7 @@
     #etiquetas, #contacto, #buscador {
         display: none;
     }
-    #inicio {
-        margin-left: -25px;
-    }
+
     .iniciodrop {
         display: none;
     }

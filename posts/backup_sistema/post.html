@@ -32,7 +32,7 @@
 
         .breadcrumbs a {
             text-decoration: none;
-            color: rgb(189, 147, 249);
+            color: #61dde6;
             -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;
         }
@@ -80,6 +80,11 @@
         .subtitulo h2 {
             color: #fff;
         }
+
+        section h3 {
+            color: #fff;
+        }
+
       </style>
     </head>
     <body>
@@ -88,38 +93,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
-            
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
+
         </nav>
 
         <!-- CUERPO -->
@@ -147,7 +155,8 @@
                 </div>
             </aside>
             <section>
-                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Backup completo de tu sistema</div>
+                <br><br>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Backup completo de tu sistema</div> 
                 <div class="titulo_articulos"><h1 id="page-title" class="page__title">Backup completo de tu sistema</h1></div>
                 <p class="page__meta">
                     <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
@@ -156,14 +165,44 @@
                 <div class="seccion">
                     <br>
                     <p>En esta sección aprenderás a realizar un backup basado en imagen del sistema el cual consistirá en seguir varios pasos muy básicos.</p>
-                    <p><img id="myImg" src="/posts/backup_sistema/images/cap1.png"></p>
-                    <p>Principalmente antes de proceder a realizar el proceso de backup, hay que entender lo siguiente. Cuando hablamos de copia de seguridad nos referimos a la salvaguarda de nuestros datos mientras que con imagen del sistema nos referimos a una copia del sistema operativo, junto a aplicaciones y datos de usuario, en un momento determinado.</p>
-                    <p>Por lo tanto en pocas palabras gracias a este tipo de backup podrás restablecer todos tus archivos importantes incluido tu sistema operativo Windows.</p>
-                    <p><img src="/posts/"></p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap1.png"></p>
+                    <p>Principalmente antes de proceder a realizar el proceso de backup, hay que entender lo siguiente. <u>Cuando hablamos de copia de seguridad nos referimos a la salvaguarda de nuestros datos mientras que con imagen del sistema nos referimos a una copia del sistema operativo, junto a aplicaciones y datos de usuario, en un momento determinado.</u></p>
+                    <p>Por lo tanto en pocas palabras gracias a este tipo de backup podrás restablecer todos tus archivos importantes incluido tu sistema operativo Windows.</p><br><br>
+                    <h3>Detalles a tener en cuenta</h3>
+                    <p>· Disponer de un disco duro externo para almacenar el backup.</p>
+                    <p>· El disco debe estar formateado en NTFS.</p>
+                    <p>· Tener en cuenta la capacidad del disco donde guardarás la imagen del sistema.</p>
+                    <p>· Montar un pendrive USB con una iso de Windows o disponer un CD/DVD para acceder al modo de recuperación de Windows.</p>
+                    <p>· Para montar el USB puedes utilizar 'rufus'.</p><br>
+                    <h3>Realizando la copia de seguridad</h3>
+                    <p>Para poder realizar la copia de seguridad seguiremos los siguientes pasos:</p>
+                    <p>- Accederemos al panel de control y des de allí haremos clic a copias de seguridad y restauración.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap2.png"></p><br>
+                    <p>- Una vez hemos accedido, daremos clic a crear una imagen de sistema.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap3.png"></p>
+                    <p>* En esta sección podremos realizar diferentes acciones. Crear una copia de seguridad de tus archivos y programar la tarea, crear un disco de recuperación, crear una imagen de sistema y realizar una restauración.</p><br>
+                    <p>- Cuando se nos abra la ventana deberemos escoger el lugar donde deseamos guardar la copia. En mi caso la guardaré en una unidad externa.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap4.png"></p><br>
+                    <p>- Haremos clic en siguiente e iniciar la copia de seguridad. Posteriormente esperaremos a que finalice el progreso.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap5.png"></p>
+                    <p>* Únicamente se realizará un backup del sistema de la unidad C: y sus respectivas particiones como EFI y recuperación.</p><br>
+                    <p>- Cuando haya finalizado el proceso, veremos la siguiente carpeta la cual estará protegida por derechos de administrador.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap6.png"></p><br><br>
+                    <h3>Restaurando la copia de seguridad</h3>
+                    <p>En este punto ya tenemos la copia de imagen del sistema realizada. Ahora con este backup vamos a restaurarlo en un equipo cuyo disco duro no dispone de ningún dato y que por lo tanto se encuentra limpio.</p>
+                    <p>- Primeramente debemos de tener un disco de recuperación o en mi caso un usb con una iso montada de Windows. Y posteriormente accederemos al entorno de recuperación.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap7.png"></p><br>
+                    <p>- Haremos clic en solucionar problemas y posteriormente recuperación de imagen de sistema.</p>               
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap8.png"></p><br>
+                    <p>- Vamos a elegir el disco o unidad donde contenga la imagen de sistema generada anteriormente.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap9.png"></p><br>
+                    <p>- A menos que quieras tener en cuenta algún detalle, como excluir algún disco o configurar opciones avanzadas.. En mi caso haré clic en siguiente y posteriormente deberemos esperar a que finalice la restauración.</p>
+                    <p><img class="zoomable-image" src="/posts/backup_sistema/images/cap10.png"></p>
+                    <p>* Una vez finalizada la restauración ya tendrás nuevamente tu equipo con el sistema y sus archivos.</p>
                     <br>
                     <br>
                     <p>Hasta aquí es todo! Nos vemos para el próximo artículo! Un saludo! :D</p>
-                    <br>s
+                    <br>
                     <br>
                     <p>By f3l3p1n0</p>
                 </div>
@@ -194,5 +233,6 @@
         <script type="text/javascript" src="/js/script.js"></script>
         <script async="async" src="/js/animacion_menu.js"></script>
         <script async="async" src="/js/zoomimage.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>

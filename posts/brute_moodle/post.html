@@ -32,7 +32,7 @@
 
         .breadcrumbs a {
             text-decoration: none;
-            color: rgb(189, 147, 249);
+            color: #61dde6;
             -webkit-transition: all 0.1s ease-in-out;
             transition: all 0.1s ease-in-out;
         }
@@ -43,9 +43,9 @@
 
         .titulo_articulos h1 {
             margin: 1em 0 1em;
-            font-size: 1.563em;
+            font-size: 1.8em;
             font-weight: bold;
-            font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+            font-family: Georgia;
             color: #fff;
         }
 
@@ -94,38 +94,41 @@
 
         <nav>
 
-            <div class="content">
-                <div class="social">
-                    <ul id="social-list">
-                        <li id="inicio" class="list-item"><a class="item-link Inicio" href="/main/main.html">INICIO</a></li>
-                        <li id="etiquetas" class="list-item"><a class="item-link Etiquetas" href="/main/etiquetas/etiquetas.html">ETIQUETAS</a></li>
-                        <li id="buscador" class="list-item"><a class="item-link Buscar" href="/main/buscador/buscador.html">BUSCAR</a></li>
-                        <li id="contacto" class="list-item"><a class="item-link Contacto" href="/main/contacto/contacto.html">ABOUT</a></li>
-                    </ul>
+            <div class='float_wrapper' id='header-utama'>
+                <div class='wrapper'>
+                    <div class='header-menu'>
+                        <ul>
+                            <li id="inicio"><a class="item-link Inicio" href='/main/main.html'>INICIO</a></li>
+                            <li id="etiquetas"><a class="item-link Etiquetas" href='/main/etiquetas/etiquetas.html'>ETIQUETAS</a></li>
+                            <li id="buscador"><a class="item-link Buscar" href='/main/buscador/buscador.html'>BUSCAR</a></li>
+                            <li id="contacto"><a class="item-link Contacto" href='/main/contacto/contacto.html'>ABOUT</a></li>
+                        </ul>
+                    </div>
                 </div>
+                
+                <!-- Botón submenu -->
+
+                <div class="main">
+                    <label class="menu-button-wrapper" for="">
+                        <input type="checkbox" class="menu-button">
+                        <div class="icon-wrapper">
+                            <label class="hamburger">
+                            <input class="hamburger-input" type="checkbox">
+                            <span class="hamburger-line first"></span>
+                            <span class="hamburger-line second"></span>
+                            <span class="hamburger-line third"></span>
+                            </label>
+                        </div>
+                        <div class="item-list">
+                            <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
+                            <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
+                            <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
+                            <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
+                        </div>
+                    </label>
+                </div> 
             </div>
-            
-            <!-- Botón submenu -->
-            
-            <div class="main">
-                <label class="menu-button-wrapper" for="">
-                    <input type="checkbox" class="menu-button">
-                    <div class="icon-wrapper">
-                        <label class="hamburger">
-                        <input class="hamburger-input" type="checkbox">
-                        <span class="hamburger-line first"></span>
-                        <span class="hamburger-line second"></span>
-                        <span class="hamburger-line third"></span>
-                        </label>
-                    </div>
-                    <div class="item-list">
-                        <div class="iniciodrop"><a href="/main/main.html">Inicio</a></div>
-                        <div class="etiquetasdrop"><a href="/main/etiquetas/etiquetas.html">Etiquetas</a></div>
-                        <div class="finddrop"><a href="/main/buscador/buscador.html">Buscar</a></div>
-                        <div class="contactdrop"><a href="/main/contacto/contacto.html">About</a></div>
-                    </div>
-                </label>
-            </div>            
+
         </nav>
 
         <!-- CUERPO -->
@@ -153,25 +156,27 @@
                 </div>
             </aside>
             <section>
+                <br><br>
                 <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Brute_Moodle</div>
-                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Brute_Moodle</h1></div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title"><h1>Script para hacer fuerza bruta a un Moodle</div>
                 <p class="page__meta">
                     <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
                     <time datetime="2020-11-29T00:00:00+00:00">November 12, 2022</time>
                 </p>
                 <div class="seccion">
+                    <br>
                     <p> En este artículo tan breve te presentaré un script improvisado que se encarga de realizar fuerza bruta en el login de cualquier Moodle. </p>
-                    <p><img src="/posts/brute_moodle/images/cap1.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap1.PNG"></p>
                     <h3 style="color: #fff;">¿Cómo funciona?</h3>
                     <p>Todo empieza importando varios módulos necesarios. El sys, time, requests y urllib3. 
                     <p>El <u>sys</u> nos servirá para conseguir que el mensaje del creador pueda aparecer
                     con movimiento. El <u>time</u> lo necesitaremos para realizar paradas entre lineas y así no saturar el programa. <u>Requests</u> será utilizado para hacer peticiones a la url 
                     que le pasaremos a través de un "input" previamente. Por último, el <u>urllib3</u> será necesario para desactivar el mensaje que arroja cuando la conexión realizada es insegura.</p>
-                    <p><img src="/posts/brute_moodle/images/cap2.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap2.PNG"></p>
                     <p>Posteriormente cargamos una función para que no nos arroje el mensaje de que la conexión es insegura. Y preparamos los inputs para preguntar la url, la frase de error, el diccionario
                         de usuarios y el de contraseñas.
                     </p>
-                    <p><img src="/posts/brute_moodle/images/cap3.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap3.PNG"></p>
                     <p>* Los inputs funcionan con el objetivo siguiente: </p>
                     <p>
                         - Preguntamos que url del moodle quiere que sea como objetivo.<br><br>
@@ -179,19 +184,19 @@
                         - Por último se pregunta cual es el diccionario de usuarios y contraseñas que se quiere utilizar para realizar la fuerza bruta (previamente debes tenerlos preparados).<br>
                     </p>
                     <p>Se carga el mensaje del creador, con estas lineas hacemos que pueda aparecer el nombre del creador del script:</p>
-                    <p><img src="/posts/brute_moodle/images/cap4.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap4.PNG"></p>
                     <p>Ahora en esta parte del script controlamos los errores. Básicamente funciona de tal manera que si la conexión no se puede realizar exitosamente, que muestre un mensaje en pantalla.</p>
-                    <p><img src="/posts/brute_moodle/images/cap5.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap5.PNG"></p>
                     <p>En esta parte de aqui permite realizar la conexión con el servidor, nótese que en la linea de username y password irá cambiando a partir del bucle "for" que líneas más abajo está funcionando.</p>
-                    <p><img src="/posts/brute_moodle/images/cap6.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap6.PNG"></p>
                     <p>Esta parte es muy importante. Permite llamar a las dos funciones de más arriba. A parte, permite que el programa no falle en caso de error y así siga funcionando.</p>
-                    <p><img src="/posts/brute_moodle/images/cap7.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap7.PNG"></p>
                     <p>Por último tenemos las últimas lineas del script. En este apartado funciona a partir de un bucle para que nunca acabe excepto si el programa encuentra alguna credencial válida. Dentro de bucle 
                         funciona de tal manera que cargamos el diccionario de usuarios, passwords y un archivo que se creará en caso de encontrar alguna credencial válida. Con el for iremos recorriendo linea por linea de cada diccionario 
                     y por cada linea iremos realizando la conexion llamando a las funciones descritas anteriormente. Por último, se irá reportando en pantalla si las credenciales son válidas o inválidas.</p>
-                    <p><img src="/posts/brute_moodle/images/cap8.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap8.PNG"></p>
                     <p>Nótese algo importante. En estas dos lineas permito que si el diccionario ya ha sido recorrido, que se reinicie para volver a recorrerlo.</p>
-                    <p><img src="/posts/brute_moodle/images/cap9.PNG"></p>
+                    <p><img class="zoomable-image" src="/posts/brute_moodle/images/cap9.PNG"></p>
                     <p>El script completo lo puedes encontrar en mi <a style="color:#95dce0; text-decoration: none;" href="https://github.com/f3l3p1n0/brute_moodle">github.</a></p>
                     <br>
                     <br>
@@ -199,6 +204,9 @@
                     <br>
                     <br>
                     <p>By f3l3p1n0</p>
+                </div>
+                <div id="myModal" class="modal">
+                    <img class="modal-content" id="img01">
                 </div>
                 <br>
                 <br>
@@ -223,5 +231,7 @@
         <div id="topBtn"><p><img src="/up.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 30px; height: 30px; opacity: 0.8;"></p></div>        
         <script type="text/javascript" src="/js/script.js"></script>
         <script async="async" src="/js/animacion_menu.js"></script>
+        <script async="async" src="/js/zoomimage.js"></script>
+        <script type="text/javascript" src="/js/menu_scroto.js"></script>
     </body>
 </html>
