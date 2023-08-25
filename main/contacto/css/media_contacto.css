@@ -110,6 +110,11 @@
 }
 
 @media only screen and (min-width: 780px) and (max-width: 879px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -157,6 +162,11 @@
 }
 
 @media only screen and (min-width: 680px) and (max-width: 779px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -204,6 +214,11 @@
 }
 
 @media only screen and (min-width: 593px) and (max-width: 679px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -252,6 +267,11 @@
 }
 
 @media only screen and (min-width: 425px) and (max-width: 593px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -304,6 +324,11 @@
 }
 
 @media only screen and (min-width: 352px) and (max-width: 424px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -357,6 +382,11 @@
 
 
 @media only screen and (min-width: 297px) and (max-width: 351px){ /* Moviles */
+
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+
     nav{
         flex-direction: row;
     }
@@ -408,6 +438,11 @@
 }
 
 @media only screen and (max-width: 296px){ /* Moviles */
+    
+    body {
+        margin: 4em 0em 0em 0em;
+    }
+    
     nav{
         flex-direction: row;
     }

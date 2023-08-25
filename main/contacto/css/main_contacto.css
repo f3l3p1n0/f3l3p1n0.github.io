@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 4em 0em 0em 0em;
+    margin: 0;
     padding: 0;
     background-color: #1f2833;
 }
@@ -272,7 +272,7 @@ section {
 
 ::selection {
     color: #fff;
-    background: #000;
+    background: rgba(0, 0, 0, 0.32);
 }
 
 

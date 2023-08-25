@@ -81,7 +81,11 @@
                 color: #fff;
             }
 
-        </style>
+            section h3 {
+                color: #fff;
+            }
+
+    </style>
     </head>
     <body>
         
@@ -152,82 +156,52 @@
             </aside>
             <section>
                 <br><br>
-                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Keylogger para Ubuntu</div>
-                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Keylogger para Ubuntu (versión 20 o superior)</h1></div>
+                <div class="breadcrumbs"><a href="/main/main.html">Inicio</a> / Convertir tu máquina física en virtual *VMware*</div>
+                <div class="titulo_articulos"><h1 id="page-title" class="page__title">Convertir tu máquina física en virtual *VMware*</h1></div>
                 <p class="page__meta">
                     <svg class="svg-inline--fa fa-calendar fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"></path></svg>
-                    <time datetime="2020-11-29T00:00:00+00:00">Abril 04, 2023</time>
+                    <time datetime="2020-11-29T00:00:00+00:00">Agosto 25, 2023</time>
                 </p>
                 <div class="seccion">
                     <br>
-                    <p>En este artículo te mostraré cómo descargar un KEYLOGGER y cómo ponerlo en funcionamiento. Con este podrás generar un archivo con todas las pulsaciones del teclado y enviarlo por correo electrónico.</p>
-                        
-                    <p>Un keylogger es un tipo de software malicioso que se instala en un ordenador 
-                        sin el conocimiento del usuario y registra todas las pulsaciones de teclas realizadas en el teclado, incluyendo contraseñas, nombres de usuario y otra información personal.</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap1.PNG"></p>
+                    <p>Este artículo esta enfocado para aquella empresa o en particular que desee traspasar todas sus máquinas físicas en un entorno virtualizado utilizando VMware.</p>         
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap1.png"></p>
                     <br>
-                    <p><u>Requisitos para el keylogger</u></p>
-                    <p>
-                        - De momento solo se ha probado para Ubuntu y con versión 20 o superior.<br><br>
-                        - Se necesita dos cuentas de correo electrónico. La primera es obligatorio que sea de Gmail.<br><br>
-                        - Se necesitará una contraseña para aplicaciones (Más adelante lo explico).<br><br>
-                        - Muy importante haber realizado la escalada de privilegios exitosamente (Necesitaremos privilegios root).
-                    </p>
+                    <p>Para ello VMware dispone de una herramineta que permite poder realizar la conversión. Esta herramienta es VMware vCenter Converter.</p>
+                    <p>VMware vCenter Converter es una herramienta de
+                        migración de clase empresarial muy sólida y escalable
+                        que automatiza el proceso de crear máquinas virtuales
+                        VMware a partir de máquinas físicas, otros formatos
+                        de máquina virtual y formatos de imágenes de terceros.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap2.png"></p>
                     <br>
-                    <p><u>Explicación del proceso</u></p>
-                    <p>Lo primero que vamos a hacer es situarnos. Disponemos de la siguiente máquina (Víctima) basada en Ubuntu con la versión 20.04</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap2.png"></p>
-                    <p>Ahora lo que haremos es descargar el keylogger con sus archivos necesarios. Es necesario que tengas en cuenta la decisión de dónde alojarás el keylogger.
-                        Recomiendo que sea en un lugar donde la víctima no lo vaya a encontrar (Más adelante subiré un artículo para aprender como ofuscar o encriptar el código).
-                    </p>
-                    <p>Para descargar el keylogger podemos ir al siguiente enlace: <a style="color:aqua; text-decoration: none;" href="https://github.com/f3l3p1n0/f3l3key">Descargar aquí</a></p>
-                    <p>O también podemos emplear la siguiente comanda:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap3.png"></p>
-                    <p>Una vez que lo hayamos descargado, iremos al código del archivo 'tester.sh' y nos situaremos en la siguiente línea:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap4.png"></p>
-                    <p>En este archivo será el único que tendrás que realizar varios cambios. Muy importante que por cada cambio que realices, respetes la estructura tal y como la estás viendo.</p>
-                    <p>Primeramente, debes agregar la ruta donde se encuentra actualmente el keylogger. En mi caso se encuentra en Descargas.</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap5.png"></p>
-                    <p>Una vez especificada la ruta, tendrás que escribir el correo de la cuenta que va a emitir los mensajes. En este caso es obligatorio que
-                        sea una cuenta basada en Gmail ya que el keylogger utiliza los servicios de Gmail para el envio del archivo con las pulsaciones.
-                    </p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap6.png"></p>
-                    <p>El siguiente paso sería generar una contraseña. Esta contraseña debes generarla con la cuenta de Gmail que has creado para enviar los correos. 
-                        Para ello nos dirijiremos al siguiente apartado:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap7.png"></p>
-                    <p>Después en el buscador escribirás lo siguiente:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap8.png"></p>
-                    <p>Finalmente en este apartado podrás generar la clave para aplicaciones:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap9.png"></p>
-                    <p>Esta contraseña tendrás que copiarla y pegarla en el siguiente apartado del archivo 'tester.sh'</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap10.png"></p>
-                    <p>Por último solo te queda especificar la cuenta de correo que se encargará de recibir los mensajes. Esta cuenta de correo puede ser de Gmail, Hotmail o lo que prefieras:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap11.png"></p>
-                    <p>Una vez preparado el archivo, lo guardaremos y pasaremos a aplicar permisos de ejecución a los 3 archivos:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap12.png"></p>
-                    <p>Posteriormente, ejecutaremos el archivo 'installer.sh'. Debes ser usuario root:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap13.png"></p>
-                    <p>Habrá un momento en el que el programa se detendrá en la siguiente sección:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap14.png"></p>
-                    <p>En este caso debemos de escribir el numero 1</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap15.png"></p>
-                    <p>Este archivo que se nos habrá abierto, tendremos que guardarlo presionando la tecla ctrl + o y luego enter</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap16.png"></p>
-                    <p>Posteriormente se nos habrá creado una nueva tarea Cron. Este va a permitir que el keylogger pueda estar funcionando constantemente e incluso si la máquina se reinicia:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap17.png"></p>
-                    <p>Ahora si realizamos una prueba, por ejemplo en un login cualquiera:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap18.png"></p>
-                    <p>Veremos como en el correo receptor, recibiremos un correo con un archivo:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap19.png"></p>
-                    <p>Y si lo abrimos podremos visualizar la pulsaciones de las teclas que ha realizado la víctima:</p>
-                    <p><img class="zoomable-image" src="/posts/f3l3key/images/cap20.png"></p>
+                    <p>* Nos vamos a centrar concretamente en la conversión de máquinas físicas para VMware Server o Workstation.</p>
                     <br>
-                    <p>Algo que hay que tener en cuenta es que este keylogger está programado de tal manera que te enviará un correo cada 10 minutos. En este artículo
-                        he disminuido el tiempo para enseñarte el ejemplo y así no tuviera que esperar tanto tiempo.
+                    <h3>Realizando la conversión</h3>
+                    <p>Lo primero que haremos será <a href="https://customerconnect.vmware.com/en/downloads/info/slug/datacenter_cloud_infrastructure/vmware_vcenter_converter/6_4_0" style="color:#95dce0; text-decoration: none;">descargar</a> la herramienta e instalarla en tu máquina física. Como ejemplo, en mi caso lo haré en un W7.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap3.png"></p><br>
+                    <p>Una vez abierto el programa haremos clic en convertir máquina.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap4.png"></p><br>
+                    <p>En esta ventana debemos indicar si la máquina a convertir está encendida o apagada. En este caso, está encendida. Por otro lado, escogemos la opción máquina local.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap5.png"></p><br>
+                    <p>* Si tu situación es querer convertir una máquina de forma remota, deberás escoger remote Windows o remote Linux según el sistema operativo. Es importante destacar en esta situación de que el convertidor se encontrará en una máquina con comunicación entre el servidor de máquinas virtuales y la máquina física a convertir. 
                     </p>
-                    <p>También decir que esto en una versión beta, por tanto continua en constante mejora.</p>
-                    <p>En otro artículo comentaré el código del keylogger y así podrás saber cómo modificar varios parámetros y entre otros conceptos que quedan por explicar.</p>
-                    <br>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap6.jpg"></p><br>
+                    <p>* Por lo tanto lo que hará es convertir la máquina y depositarla en el servidor. Por ende habrá que escribir la dirección IP y credenciales de la máquina a convertir.</p>
+                    <p>Ahora nos pregunta hacia donde queremos llevar la conversión. En este caso escogemos hacia una máquina VMware Workstation. Escogeremos la versión adecuada del Workstation que dispones actualmente y el nombre y destino de la máquina virtual resultante.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap7.png"></p><br>
+                    <p>* Si dispones de un hipervisor debes escoger VMware Infrastructure virtual machine, es decir hacia una infraestructura de hipervisor como por ej: ESXi.</p>
+                    <p>Haremos clic siguiente y determinaremos cuanto espacio queremos que ocupe la máquina virutal resultante. En mi caso quiero que ocupe solo el mínimo.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap8.png"></p><br>
+                    <p>Por todo lo demás no tocaré nada, ya que más adelante podré configurarlo en el Workstation. Ahora solo queda esperar a que finalice el proceso de conversión.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap9.png"></p><br>
+                    <p>Una vez finalizada la conversión, veremos los archivos resultantes. Uno de estos archivos nos servirá para poder añadir una máquina virtual en Workstation.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap10.png"></p><br>
+                    <p>Lo único que nos queda es ir Workstation y añadir la máquina virtual que habremos generado a partir de la conversión.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap11.png"></p><br>
+                    <p>Para finalizar, si queremos comprobar que todo funciona correctamente iniciaremos la máquina.</p>
+                    <p><img class="zoomable-image" src="/posts/physicstovirtual/images/cap12.png"></p><br>
+                    <p>Como podéis comprobar, el objetivo de convertir una máquina física a virtual en un entorno local ha sido cumplido satisfactoriamente.</p>
                     <p>Muchas gracias por leerme, cualquier duda coméntame por mis redes sociales. Hasta otra! :D</p>
                     <br>
                     <p>By f3l3p1n0</p>

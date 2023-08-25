@@ -259,7 +259,7 @@ section h1, section h2, section h3, section h4, section h5, section h6 {
 
 ::selection {
     color: #fff;
-    background: #000;
+    background: rgba(0, 0, 0, 0.32);
 }
 
 
