@@ -213,6 +213,14 @@ canvas {
     color: rgb(10, 102, 194);
     animation: neon-github 0.08s ease-in-out infinite alternate;
   }
+
+  .sign span .wrapper .fa-coffee{
+    /*font-size: 5.6rem;*/
+    /*text-align: center;*/
+    /*line-height: 1;*/
+    color: rgb(255, 204, 0);
+    animation: neon-coffee 0.08s ease-in-out infinite alternate;
+  }
   
   /*-- Animation Keyframes --*/
   @keyframes neon-youtube {
@@ -239,6 +247,15 @@ canvas {
     }
     to {
       text-shadow: 0 0 6px rgba(10, 102, 194, 0.53), 0 0 30px rgba(10, 102, 194, 0.42), 0 0 12px rgba(10, 102, 194, 0.48), 0 0 22px rgba(10, 102, 194, 0.19);
+    }
+  }
+
+  @keyframes neon-coffee {
+    from {
+      text-shadow: 0 0 6px rgba(255, 204, 0, 0.63), 0 0 30px rgba(255, 204, 0, 0.34), 0 0 12px rgba(255, 204, 0, 0.42), 0 0 21px rgba(255, 204, 0, 0.29);
+    }
+    to {
+      text-shadow: 0 0 6px rgba(255, 204, 0, 0.53), 0 0 30px rgba(255, 204, 0, 0.42), 0 0 12px rgba(255, 204, 0, 0.48), 0 0 22px rgba(255, 204, 0, 0.19);
     }
   }
   

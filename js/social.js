@@ -32,9 +32,18 @@ setTimeout(function() {
 }, 1100);
 
 setTimeout(function() {
+    var elements = document.getElementsByClassName("bounceCF");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.opacity = "1";
+        elements[i].classList.add("animate__animated", "animate__bounceIn");
+    }
+}, 1300);
+
+setTimeout(function() {
     var elements = document.getElementsByClassName("boton");
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.opacity = "1";
         //elements[i].classList.add("animate__animated", "animate__fadeInUp");
     }
 }, 1300);
+
