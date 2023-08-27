@@ -234,28 +234,28 @@ canvas {
   
   @keyframes neon-twitter {
     from {
-      text-shadow: 0 0 6px rgba(225, 48, 108, 0.63), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(225, 48, 108, 0.42), 0 0 21px rgba(29, 161, 242, 0.29);
+      text-shadow: 0 0 6px rgba(225, 48, 108, 2), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(225, 48, 108, 0.42), 0 0 21px rgba(29, 161, 242, 0.29);
     }
     to {
-      text-shadow: 0 0 6px rgba(225, 48, 108, 0.53), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(225, 48, 108, 0.48), 0 0 22px rgba(29, 161, 242, 0.19);
+      text-shadow: 0 0 6px rgba(225, 48, 108, 0.73), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(225, 48, 108, 0.48), 0 0 22px rgba(29, 161, 242, 0.19);
     }
   }
   
   @keyframes neon-github {
     from {
-      text-shadow: 0 0 6px rgba(10, 102, 194, 0.63), 0 0 30px rgba(10, 102, 194, 0.34), 0 0 12px rgba(10, 102, 194, 0.42), 0 0 21px rgba(10, 102, 194, 0.29);
+      text-shadow: 0 0 6px rgba(10, 102, 194, 2), 0 0 30px rgba(10, 102, 194, 0.34), 0 0 12px rgba(10, 102, 194, 0.42), 0 0 21px rgba(10, 102, 194, 0.29);
     }
     to {
-      text-shadow: 0 0 6px rgba(10, 102, 194, 0.53), 0 0 30px rgba(10, 102, 194, 0.42), 0 0 12px rgba(10, 102, 194, 0.48), 0 0 22px rgba(10, 102, 194, 0.19);
+      text-shadow: 0 0 6px rgba(10, 102, 194, 0.73), 0 0 30px rgba(10, 102, 194, 0.42), 0 0 12px rgba(10, 102, 194, 0.48), 0 0 22px rgba(10, 102, 194, 0.19);
     }
   }
 
   @keyframes neon-coffee {
     from {
-      text-shadow: 0 0 6px rgba(255, 204, 0, 0.63), 0 0 30px rgba(255, 204, 0, 0.34), 0 0 12px rgba(255, 204, 0, 0.42), 0 0 21px rgba(255, 204, 0, 0.29);
+      text-shadow: 0 0 6px rgba(255, 204, 0, 2), 0 0 30px rgba(255, 204, 0, 0.34), 0 0 12px rgba(255, 204, 0, 0.42), 0 0 21px rgba(255, 204, 0, 0.29);
     }
     to {
-      text-shadow: 0 0 6px rgba(255, 204, 0, 0.53), 0 0 30px rgba(255, 204, 0, 0.42), 0 0 12px rgba(255, 204, 0, 0.48), 0 0 22px rgba(255, 204, 0, 0.19);
+      text-shadow: 0 0 6px rgba(255, 204, 0, 0.73), 0 0 30px rgba(255, 204, 0, 0.42), 0 0 12px rgba(255, 204, 0, 0.48), 0 0 22px rgba(255, 204, 0, 0.19);
     }
   }
   
